@@ -1,21 +1,22 @@
 header.header
 	nav.header__nav
-		ul.header__list-profile 
-			li.header__list-profile-item
-				a.header__list-profile-link Профиль
-			li.header__list-profile-item
-				a.header__list-profile-link Корзина
-			li.header__list-profile-item
-				a.header__list-profile-link Проверить
-		ul.header__list-enter
-			li.header__list-enter-item
-				a.header__list-enter-link Добро пожаловать!
-			li.header__list-enter-item
-				a.header__list-enter-link Вход
-				span |
-				a.header__list-enter-link Регистрация
-			li.header__list-enter-item
-				a.header__list-enter-link Русский
+		.center-layout
+			ul.header__list-profile 
+				li.header__list-profile-item
+					a.header__list-profile-link.header__list-profile-link_profile Профиль
+				li.header__list-profile-item
+					a.header__list-profile-link.header__list-profile-link_backet Корзина
+				li.header__list-profile-item
+					a.header__list-profile-link.header__list-profile-link_check Проверить
+			ul.header__list-enter
+				li.header__list-enter-item
+					a.header__list-enter-link Добро пожаловать!
+				li.header__list-enter-item.header__list-enter-item_enter
+					a.header__list-enter-link Вход
+					span.header__list-enter-link_line |
+					a.header__list-enter-link Регистрация
+				li.header__list-enter-item
+					a.header__list-enter-link.header__list-enter-link_language Русский
 	.header__logo
 		a(href="#").header__logo-link
 			img(src="img/logo.png" alt="Prydbay.com").header__logo-img

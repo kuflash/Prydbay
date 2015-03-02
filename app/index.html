@@ -12,16 +12,18 @@
   </head>
   <header class="header">
     <nav class="header__nav">
-      <ul class="header__list-profile"> 
-        <li class="header__list-profile-item"><a class="header__list-profile-link">Профиль</a></li>
-        <li class="header__list-profile-item"><a class="header__list-profile-link">Корзина</a></li>
-        <li class="header__list-profile-item"><a class="header__list-profile-link">Проверить</a></li>
-      </ul>
-      <ul class="header__list-enter">
-        <li class="header__list-enter-item"><a class="header__list-enter-link">Добро пожаловать!</a></li>
-        <li class="header__list-enter-item"><a class="header__list-enter-link">Вход</a><span>|</span><a class="header__list-enter-link">Регистрация</a></li>
-        <li class="header__list-enter-item"><a class="header__list-enter-link">Русский</a></li>
-      </ul>
+      <div class="center-layout">
+        <ul class="header__list-profile"> 
+          <li class="header__list-profile-item"><a class="header__list-profile-link header__list-profile-link_profile">Профиль</a></li>
+          <li class="header__list-profile-item"><a class="header__list-profile-link header__list-profile-link_backet">Корзина</a></li>
+          <li class="header__list-profile-item"><a class="header__list-profile-link header__list-profile-link_check">Проверить</a></li>
+        </ul>
+        <ul class="header__list-enter">
+          <li class="header__list-enter-item"><a class="header__list-enter-link">Добро пожаловать!</a></li>
+          <li class="header__list-enter-item header__list-enter-item_enter"><a class="header__list-enter-link">Вход</a><span class="header__list-enter-link_line">|</span><a class="header__list-enter-link">Регистрация</a></li>
+          <li class="header__list-enter-item"><a class="header__list-enter-link header__list-enter-link_language">Русский</a></li>
+        </ul>
+      </div>
     </nav>
     <div class="header__logo"><a href="#" class="header__logo-link"><img src="img/logo.png" alt="Prydbay.com" class="header__logo-img"></a>
       <div class="header__contakts">
@@ -275,5 +277,5 @@
   <!-- endbuild-->
   <!-- build:js js/main.js-->
   <script src="../js/main.js"></script>
-  <!-- endbuild -->
+  <!-- endbuild-->
 </html>

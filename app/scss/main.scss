@@ -3,5 +3,142 @@
 body {
 	font-family: Verdana, "Sans-Serif";
 	font-weight: 400;
+	font-size: 14px;
 }
-
+.center-layout {
+	width: 960px;
+	margin: 0 auto;
+	padding-left: 5px;
+	padding-right: 5px;
+	&:after {
+		@extend .clear;
+	}
+}
+.header {
+	border-top: 5px solid #73c040;
+	/* header left menu */
+	&__nav {
+		background: #fdfefc;
+		background: linear-gradient(to bottom, #fefefe, #f4f7ef);
+		border-top: 1px solid #ccc;
+		border-bottom: 1px solid #ccc;
+		&:after {
+			@extend .clear;
+		}
+	}
+	&__list-profile {
+		float: left;
+		@include list;
+		&:after {
+			@extend .clear;
+		}
+		&-item {
+			float: left;
+			margin-left: 53px;
+			&:first-child {
+				margin-left: 0;
+			}
+		}
+		&-link {
+			color: #666;
+			display:: inline-block;
+			position: relative;
+			padding-top: 15px;
+			padding-bottom: 16px;
+			&:hover {
+				color: #85c858;
+				text-decoration: none;
+			}
+			&:before {
+				display: block;
+			    content: "";
+			    position: absolute;
+			    left: -28px;
+				background-image: url(../img/spritesheet.png);
+			    background-repeat: no-repeat;
+			}
+			&_profile:hover:before {
+				background-position: -109px -47px;
+			}
+			&_profile:before{
+				width: 16px;
+			    height: 15px;
+			    background-position: -83px -47px;
+			}
+			&_backet {
+				&:before {
+					width: 18px;
+				    height: 16px;
+				    background-position: -85px -5px;
+				}
+				&:hover:before {
+					background-position: -113px -5px;
+				}
+			}
+			&_check {
+				&:before {
+				width: 16px;
+			    height: 11px;
+			    background-position: -298px -5px;
+			    top: 18px;
+			    left: -25px
+			    }
+			    &:hover:before {
+			    	background-position: -298px -26px;
+			    }
+			}
+		}
+	}
+	/* header right menu*/
+	&__list-enter {
+		float: right;
+		@include list;
+		margin-right: 40px;
+		&:after {
+			@extend .clear;
+		}
+		&-item {
+			float: left;
+			margin-left: 41px;
+			&:first-child {
+				margin-left: 0;
+			}
+			&_enter {
+				margin-left: 18px;
+			}
+		}
+		&-link {
+			color: #666;
+			display:: inline-block;
+			padding: 15px 5px 16px;
+			&:hover {
+				text-decoration: none;
+				color: #fff;
+				background: #89d656;
+				background: linear-gradient(to bottom, #8cd959, #74c141);
+			}
+			&_line {
+				margin-left: 2px;
+				margin-right: 1px;
+				padding: 0;
+			}
+			&_language {
+				position: relative;
+				width: 80px;
+				text-align: right;
+				&:before{
+					width: 16px;
+				    height: 11px;
+				    background-position: -5px -47px;
+				    background-image: url(../img/spritesheet.png);
+				    background-repeat: no-repeat;
+				    display: block;
+				    content: "";
+				    position: absolute;
+				    left: 5px;
+				    top: 18px;
+				}
+			}
+		}
+	}
+}
