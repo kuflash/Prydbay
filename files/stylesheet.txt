@@ -1,0 +1,227 @@
+.sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-github {
+    width: 30px;
+    height: 30px;
+    background-position: -5px -5px;
+}
+
+.sprite-gmail {
+    width: 30px;
+    height: 30px;
+    background-position: -45px -5px;
+}
+
+.sprite-ico-backet {
+    width: 18px;
+    height: 16px;
+    background-position: -85px -5px;
+}
+
+.sprite-ico-backet-hover {
+    width: 18px;
+    height: 16px;
+    background-position: -113px -5px;
+}
+
+.sprite-ico-blizzard {
+    width: 147px;
+    height: 77px;
+    background-position: -141px -5px;
+}
+
+.sprite-ico-check {
+    width: 16px;
+    height: 11px;
+    background-position: -298px -5px;
+}
+
+.sprite-ico-check-hover {
+    width: 16px;
+    height: 11px;
+    background-position: -298px -26px;
+}
+
+.sprite-ico-footer-facebook {
+    width: 40px;
+    height: 40px;
+    background-position: -5px -92px;
+}
+
+.sprite-ico-footer-facebook-hover {
+    width: 40px;
+    height: 40px;
+    background-position: -55px -92px;
+}
+
+.sprite-ico-footer-google {
+    width: 40px;
+    height: 40px;
+    background-position: -105px -92px;
+}
+
+.sprite-ico-footer-google-hover {
+    width: 40px;
+    height: 40px;
+    background-position: -155px -92px;
+}
+
+.sprite-ico-footer-logo {
+    width: 60px;
+    height: 55px;
+    background-position: -205px -92px;
+}
+
+.sprite-ico-footer-mail {
+    width: 40px;
+    height: 40px;
+    background-position: -275px -92px;
+}
+
+.sprite-ico-footer-mail-hover {
+    width: 40px;
+    height: 40px;
+    background-position: -5px -142px;
+}
+
+.sprite-ico-footer-twitter {
+    width: 43px;
+    height: 43px;
+    background-position: -55px -142px;
+}
+
+.sprite-ico-footer-twitter-hover {
+    width: 40px;
+    height: 40px;
+    background-position: -108px -142px;
+}
+
+.sprite-ico-footer-vk {
+    width: 40px;
+    height: 40px;
+    background-position: -275px -142px;
+}
+
+.sprite-ico-footer-vk-hover {
+    width: 40px;
+    height: 40px;
+    background-position: -5px -192px;
+}
+
+.sprite-ico-kyivstar {
+    width: 89px;
+    height: 82px;
+    background-position: -158px -157px;
+}
+
+.sprite-ico-language {
+    width: 16px;
+    height: 11px;
+    background-position: -5px -47px;
+}
+
+.sprite-ico-message {
+    width: 16px;
+    height: 11px;
+    background-position: -31px -47px;
+}
+
+.sprite-ico-mts {
+    width: 133px;
+    height: 64px;
+    background-position: -5px -249px;
+}
+
+.sprite-ico-playstation {
+    width: 103px;
+    height: 80px;
+    background-position: -148px -249px;
+}
+
+.sprite-ico-print {
+    width: 16px;
+    height: 16px;
+    background-position: -57px -47px;
+}
+
+.sprite-ico-profile {
+    width: 16px;
+    height: 15px;
+    background-position: -83px -47px;
+}
+
+.sprite-ico-profile-hover {
+    width: 16px;
+    height: 15px;
+    background-position: -109px -47px;
+}
+
+.sprite-ico-skype {
+    width: 14px;
+    height: 15px;
+    background-position: -298px -47px;
+}
+
+.sprite-ico-skype-2 {
+    width: 132px;
+    height: 58px;
+    background-position: -324px -5px;
+}
+
+.sprite-ico-sssr {
+    width: 131px;
+    height: 82px;
+    background-position: -325px -73px;
+}
+
+.sprite-ico-star {
+    width: 16px;
+    height: 15px;
+    background-position: -325px -165px;
+}
+
+.sprite-ico-star-active {
+    width: 16px;
+    height: 15px;
+    background-position: -351px -165px;
+}
+
+.sprite-ico-tel {
+    width: 10px;
+    height: 16px;
+    background-position: -466px -5px;
+}
+
+.sprite-ico-treng {
+    width: 12px;
+    height: 26px;
+    background-position: -377px -165px;
+}
+
+.sprite-linkedin {
+    width: 30px;
+    height: 30px;
+    background-position: -399px -165px;
+}
+
+.sprite-stackoverflow {
+    width: 30px;
+    height: 30px;
+    background-position: -439px -165px;
+}
+
+.sprite-tumblr {
+    width: 30px;
+    height: 30px;
+    background-position: -55px -205px;
+}
+
+.sprite-twitter {
+    width: 30px;
+    height: 30px;
+    background-position: -95px -205px;
+}

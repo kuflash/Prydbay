@@ -1,0 +1,86 @@
+.hide {
+	display: none;
+}
+.show {
+	display: block
+}
+.clear {
+	display: table;
+	content: "";
+	height: 0;
+	clear: both;
+}
+.text-left {
+	text-align: left;
+}
+.text-right { 
+	text-align: right;
+}
+.text-center { 
+	text-align: center;
+}
+
+/* for press footer*/
+html, body {
+	height: 100%;
+}
+.page{
+	min-height: 100%;
+	position: relative;
+}
+
+.wrapper {
+	padding-bottom: 350px;
+}
+
+.footer {
+	position: absolute;
+	width: 100%;
+	left: 0;
+	bottom: 0
+}
+/* end press footer*/
+
+a {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+
+
+
+
+/* mixins */
+
+/* buttons */
+@mixin buttons($width, $height, $rad, $bg:#17709a) {
+	width: $width;
+	height: $height;
+	line-height: $height;
+	border-radius: $rad;
+	background: $bg;
+	display: inline-block;
+	padding: 0;
+	padding-left: 10px;
+	padding-right: 10px;
+	border: 0;
+	text-align: center;
+	cursor: pointer;
+	transition: .3s;
+	&:hover {
+		background: darken($bg, 5%)
+	}
+	&:before {
+		content: "";
+		display: inline-block;
+	}
+}
+
+
+/* list */
+@mixin list ($marg:0, $padd:0) {
+	list-style-type: none;
+	padding: $padd;
+	margin: $marg;
+}
