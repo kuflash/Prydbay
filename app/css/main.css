@@ -4,7 +4,7 @@
 .show {
   display: block; }
 
-.clear, .center-layout:after, .header__nav:after, .header__list-profile:after, .header__list-enter:after {
+.clear, .center-layout:after, .header__nav:after, .header__list-profile:after, .header__list-enter:after, .header__contakts:after, .header__info:after {
   display: table;
   content: "";
   height: 0;
@@ -61,17 +61,23 @@ body {
 .header {
   border-top: 5px solid #73c040;
   /* header left menu */
-  /* header right menu*/ }
+  /* header right menu*/
+  /* header logo section */
+  /* header bottom*/
+  /* header bottom navigation*/
+  /* header bottom search and basket*/ }
   .header__nav {
     background: #fdfefc;
     background: linear-gradient(to bottom, #fefefe, #f4f7ef);
     border-top: 1px solid #ccc;
-    border-bottom: 1px solid #ccc; }
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 20px; }
   .header__list-profile {
     float: left;
     list-style-type: none;
     padding: 0;
-    margin: 0; }
+    margin: 0;
+    margin-left: 28px; }
     .header__list-profile-item {
       float: left;
       margin-left: 53px; }
@@ -118,14 +124,14 @@ body {
     list-style-type: none;
     padding: 0;
     margin: 0;
-    margin-right: 40px; }
+    margin-right: 7px; }
     .header__list-enter-item {
       float: left;
-      margin-left: 41px; }
+      margin-left: 45px; }
       .header__list-enter-item:first-child {
         margin-left: 0; }
       .header__list-enter-item_enter {
-        margin-left: 18px; }
+        margin-left: 20px; }
     .header__list-enter-link {
       color: #666;
       display: inline-block;
@@ -154,3 +160,121 @@ body {
           position: absolute;
           left: 5px;
           top: 18px; }
+  .header .header__logo {
+    margin-bottom: 10px; }
+    .header .header__logo-link {
+      float: left; }
+  .header__contakts {
+    float: right;
+    padding-top: 18px; }
+    .header__contakts-tel, .header__contakts-comp {
+      padding-left: 25px;
+      border: 1px solid #ccc;
+      padding-top: 5px; }
+      .header__contakts-tel a, .header__contakts-comp a {
+        margin: 0;
+        margin-bottom: 7px;
+        position: relative;
+        display: block;
+        color: #666; }
+    .header__contakts-tel {
+      float: left;
+      min-width: 152px;
+      background: #fefffe;
+      background: linear-gradient(to bottom, #fefffe, #f4f7ef); }
+      .header__contakts-tel_tel:before {
+        width: 10px;
+        height: 16px;
+        background-position: -466px -5px;
+        position: absolute;
+        content: "";
+        background-image: url(../img/spritesheet.png);
+        background-repeat: no-repeat;
+        display: block;
+        left: -18px;
+        top: 4px; }
+      .header__contakts-tel_fax:before {
+        width: 16px;
+        height: 16px;
+        background-position: -57px -47px;
+        position: absolute;
+        content: "";
+        background-image: url(../img/spritesheet.png);
+        background-repeat: no-repeat;
+        display: block;
+        left: -20px;
+        top: 4px; }
+    .header__contakts-comp {
+      float: right;
+      margin-left: 10px;
+      min-width: 175px;
+      background: #fefffe;
+      background: linear-gradient(to bottom, #fefffe, #f4f7ef); }
+      .header__contakts-comp_skype:before {
+        width: 14px;
+        height: 15px;
+        background-position: -298px -47px;
+        position: absolute;
+        content: "";
+        background-image: url(../img/spritesheet.png);
+        background-repeat: no-repeat;
+        display: block;
+        left: -20px;
+        top: 4px; }
+      .header__contakts-comp_mail:before {
+        width: 16px;
+        height: 11px;
+        background-position: -31px -47px;
+        position: absolute;
+        content: "";
+        background-image: url(../img/spritesheet.png);
+        background-repeat: no-repeat;
+        display: block;
+        left: -20px;
+        top: 4px; }
+  .header__menu {
+    float: left;
+    margin-top: 10px; }
+    .header__menu-list {
+      list-style-type: none;
+      padding: 0;
+      margin: 0; }
+    .header__menu-item {
+      float: left;
+      margin-left: 20px;
+      text-transform: uppercase;
+      color: #4b4b4b; }
+      .header__menu-item:first-child {
+        margin-left: 0; }
+    .header__menu-link {
+      color: #4b4b4b;
+      transition: 0.3s; }
+      .header__menu-link:hover, .header__menu-link_active {
+        color: #73c040;
+        text-decoration: none; }
+  .header__info {
+    float: right;
+    min-width: 500px; }
+    .header__info-fake {
+      float: left;
+      border: 1px solid #73c040;
+      position: relative; }
+    .header__info-input {
+      padding: 10px 5px;
+      color: #4b4b4b; }
+      .header__info-input:focus {
+        outline: 0; }
+    .header__info-submit, .header__info .fake-submit {
+      width: 40px;
+      height: 39px;
+      position: absolute;
+      right: 0;
+      top: 1px; }
+    .header__info-submit {
+      z-index: 2;
+      opacity: 0; }
+    .header__info .fake-submit {
+      cursor: pointer;
+      z-index: 1;
+      background: #8dd95a url(../img/spritesheet.png) 218px 142px;
+      background: url(../img/spritesheet.png) 218px 142px, linear-gradient(to bottom, #8dd95a, #75c242); }

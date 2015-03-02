@@ -25,43 +25,49 @@
         </ul>
       </div>
     </nav>
-    <div class="header__logo"><a href="#" class="header__logo-link"><img src="img/logo.png" alt="Prydbay.com" class="header__logo-img"></a>
-      <div class="header__contakts">
-        <div class="header__contakts_tel">
-          <p>+38 063 606 63 57</p>
-          <p>+38 067 460 26 25</p>
-        </div>
-        <div class="header__contakts_comp">
-          <p>prydbay</p>
-          <p>support@prydbay.com</p>
+    <section class="header__logo">
+      <div class="center-layout"><a href="#" class="header__logo-link"><img src="img/logo.png" alt="Prydbay.com" class="header__logo-img"></a>
+        <div class="header__contakts">
+          <div class="header__contakts-tel"><a href="tel:+380636066357" class="header__contakts-tel_tel">+38 063 606 63 57</a><a href="tel:+380674602625" class="header__contakts-tel_fax">+38 067 460 26 25</a></div>
+          <div class="header__contakts-comp"><a href="skype:prydbay?chat" class="header__contakts-comp_skype">prydbay</a><a href="mailto:support@prydbay.com" class="header__contakts-comp_mail">support@prydbay.com</a></div>
         </div>
       </div>
-    </div>
-    <nav class="header__menu">
-      <ul class="header__menu-list">
-        <li class="header__menu-item">                        <a href="#" class="header__menu-link">Главная</a></li>
-        <li class="header__menu-item"><a href="#" class="header__menu-link header__menu-link_active">Каталог</a></li>
-        <li class="header__menu-item"><a href="#" class="header__menu-link">Контакты</a></li>
-        <li class="header__menu-item"><a href="#" class="header__menu-link">Блог</a></li>
-        <li class="header__menu-item"><a href="#" class="header__menu-link">Новости</a></li>
-      </ul>
-    </nav>
-    <div class="header__info">
-      <div class="header__search">
-        <input type="search" name="search" placeholder="Поиск...">
-        <div id="header__price" class="header__price"><span class="header__price__number">1</span> шт. - <span class=".header__price__price">89372.99</span></div>
-        <div class="header__buy">
-          <div class="header__buy-img-wrap"><img src="img/buy-img.jpg" alt="buy-img" class="header__buy-img"></div>
-          <div class="header__buy-title">Samsung <span>galaxy s5</span></div>
-          <div class="header__buy-price">1 x <span class="header__buy-price">4896.99</span></div>
-          <div class="header__buy-price">Сумма: <span class="header__buy-price">4896.99</span></div>
-          <div class="header__buy-buttons">
-            <div class="header__buy-buttons header__buy-buttons_basket">Корзина</div>
-            <div class="header__buy-buttons header__buy-buttons_buy">Купить</div>
+    </section>
+    <section class="header__bottom">
+      <div class="center-layout">
+        <nav class="header__menu">
+          <ul class="header__menu-list">
+            <li class="header__menu-item">                        <a href="#" class="header__menu-link header__menu-link_active">Главная</a></li>
+            <li class="header__menu-item"><a href="#" class="header__menu-link header__menu-link">Каталог</a></li>
+            <li class="header__menu-item"><a href="#" class="header__menu-link">Контакты</a></li>
+            <li class="header__menu-item"><a href="#" class="header__menu-link">Блог</a></li>
+            <li class="header__menu-item"><a href="#" class="header__menu-link">Новости</a></li>
+          </ul>
+        </nav>
+        <div class="header__info">
+          <div class="header__search">
+            <form action="#" method="GET">
+              <div class="header__info-fake">
+                <input type="search" name="search" placeholder="Поиск..." class="header__info-input">
+                <input type="submit" class="header__info-submit">
+                <div class="fake-submit"></div>
+              </div>
+            </form>
+            <div id="header__price" class="header__price"><span class="header__price__number">1</span> шт. - <span class=".header__price__price">89372.99</span></div>
+          </div>
+          <div class="header__buy hide">
+            <div class="header__buy-img-wrap"><img src="img/buy-img.jpg" alt="buy-img" class="header__buy-img"></div>
+            <div class="header__buy-title">Samsung <span>galaxy s5</span></div>
+            <div class="header__buy-price">1 x <span class="header__buy-price">4896.99</span></div>
+            <div class="header__buy-price">Сумма: <span class="header__buy-price">4896.99</span></div>
+            <div class="header__buy-buttons">
+              <div class="header__buy-buttons header__buy-buttons_basket">Корзина</div>
+              <div class="header__buy-buttons header__buy-buttons_buy">Купить</div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
   </header>
   <section class="slider">
     <div class="slider__list">
