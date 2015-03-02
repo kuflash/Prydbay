@@ -231,6 +231,8 @@ body {
 			}
 		}
 	}
+
+
 	/* header bottom*/
 	/* header bottom navigation*/
 	&__menu {
@@ -238,12 +240,16 @@ body {
 		margin-top: 10px;
 		&-list {
 			@include list;
+			&:after {
+				@extend .clear;
+			}
 		}
 		&-item {
 			float: left;
-			margin-left: 20px;
+			margin-left: 18px;
 			text-transform: uppercase;
 			color: #4b4b4b;
+			font-size: 18px;
 			&:first-child {
 				margin-left: 0;
 			}
@@ -262,33 +268,39 @@ body {
 	/* header bottom search and basket*/
 	&__info {
 		float: right;
-		min-width: 500px;
+		min-width: 442px;
 		&:after {
 			@extend .clear;
 		}
+
 		&-fake {
-			float: left;
 			border: 1px solid #73c040;
 			position: relative;
+			min-width: 245px;
 		}
 		&-input {
-			padding: 10px 5px;
+			padding: 13px 5px 13px;
+			border: 0;
 			color: #4b4b4b;
+			min-width: 206px;
 			&:focus {
 				outline: 0;
 			}
 		}
 		&-submit, .fake-submit {
-			width: 40px;
-			height: 39px;
+			width: 41px;
+			height: 43px;
 			position: absolute;
 			right: 0;
-			top: 1px;	
+			top: 0;	
 		}
 
 		&-submit {
 			z-index: 2;
 			opacity: 0;
+		}
+		&-form {
+			float: left;
 		}
 		.fake-submit {
 			cursor: pointer;
@@ -296,5 +308,14 @@ body {
 			background: #8dd95a url(../img/spritesheet.png) 218px 142px;
 			background: url(../img/spritesheet.png) 218px 142px, linear-gradient(to bottom, #8dd95a, #75c242);
 		}
+	}
+	&__price {
+		background: #8dd95a url(../img/spritesheet.png) 218px 106px;
+		float: left;
+		width: 130px;
+		margin-left: 10px;
+		padding: 13px 5px;
+		color: #fff;
+		padding-left: 50px;
 	}
 }

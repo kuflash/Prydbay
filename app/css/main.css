@@ -4,7 +4,7 @@
 .show {
   display: block; }
 
-.clear, .center-layout:after, .header__nav:after, .header__list-profile:after, .header__list-enter:after, .header__contakts:after, .header__info:after {
+.clear, .center-layout:after, .header__nav:after, .header__list-profile:after, .header__list-enter:after, .header__contakts:after, .header__menu-list:after, .header__info:after {
   display: table;
   content: "";
   height: 0;
@@ -241,9 +241,10 @@ body {
       margin: 0; }
     .header__menu-item {
       float: left;
-      margin-left: 20px;
+      margin-left: 18px;
       text-transform: uppercase;
-      color: #4b4b4b; }
+      color: #4b4b4b;
+      font-size: 18px; }
       .header__menu-item:first-child {
         margin-left: 0; }
     .header__menu-link {
@@ -254,27 +255,39 @@ body {
         text-decoration: none; }
   .header__info {
     float: right;
-    min-width: 500px; }
+    min-width: 442px; }
     .header__info-fake {
-      float: left;
       border: 1px solid #73c040;
-      position: relative; }
+      position: relative;
+      min-width: 245px; }
     .header__info-input {
-      padding: 10px 5px;
-      color: #4b4b4b; }
+      padding: 13px 5px 13px;
+      border: 0;
+      color: #4b4b4b;
+      min-width: 206px; }
       .header__info-input:focus {
         outline: 0; }
     .header__info-submit, .header__info .fake-submit {
-      width: 40px;
-      height: 39px;
+      width: 41px;
+      height: 43px;
       position: absolute;
       right: 0;
-      top: 1px; }
+      top: 0; }
     .header__info-submit {
       z-index: 2;
       opacity: 0; }
+    .header__info-form {
+      float: left; }
     .header__info .fake-submit {
       cursor: pointer;
       z-index: 1;
       background: #8dd95a url(../img/spritesheet.png) 218px 142px;
       background: url(../img/spritesheet.png) 218px 142px, linear-gradient(to bottom, #8dd95a, #75c242); }
+  .header__price {
+    background: #8dd95a url(../img/spritesheet.png) 218px 106px;
+    float: left;
+    width: 130px;
+    margin-left: 10px;
+    padding: 13px 5px;
+    color: #fff;
+    padding-left: 50px; }
