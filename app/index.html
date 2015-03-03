@@ -1,117 +1,206 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>prydbay</title>
-    <!-- build:css css/vendor.css-->
-    <!-- bower:css-->
-    <link rel="stylesheet" href="bower_components/normalize.css/normalize.css" />
-    <!-- endbower -->
-    <link rel="stylesheet" href="css/jquery.bxslider.css">
-    <!-- endbuild-->
-    <!-- build:css css/main.css-->
-    <link rel="stylesheet" type="text/css" href="css/main.css">
-    <!-- endbuild-->
-  </head>
-  <header class="header">
-    <nav class="header__nav">
-      <div class="center-layout">
-        <ul class="header__list-profile"> 
-          <li class="header__list-profile-item"><a class="header__list-profile-link header__list-profile-link_profile">Профиль</a></li>
-          <li class="header__list-profile-item"><a class="header__list-profile-link header__list-profile-link_backet">Корзина</a></li>
-          <li class="header__list-profile-item"><a class="header__list-profile-link header__list-profile-link_check">Проверить</a></li>
-        </ul>
-        <ul class="header__list-enter">
-          <li class="header__list-enter-item"><a class="header__list-enter-link">Добро пожаловать!</a></li>
-          <li class="header__list-enter-item header__list-enter-item_enter"><a class="header__list-enter-link">Вход</a><span class="header__list-enter-link_line">|</span><a class="header__list-enter-link">Регистрация</a></li>
-          <li class="header__list-enter-item"><a class="header__list-enter-link header__list-enter-link_language">Русский</a></li>
-        </ul>
-      </div>
-    </nav>
-    <section class="header__logo">
-      <div class="center-layout"><a href="#" class="header__logo-link"><img src="img/logo.png" alt="Prydbay.com" class="header__logo-img"></a>
-        <div class="header__contakts">
-          <div class="header__contakts-tel"><a href="tel:+380636066357" class="header__contakts-tel_tel">+38 063 606 63 57</a><a href="tel:+380674602625" class="header__contakts-tel_fax">+38 067 460 26 25</a></div>
-          <div class="header__contakts-comp"><a href="skype:prydbay?chat" class="header__contakts-comp_skype">prydbay</a><a href="mailto:support@prydbay.com" class="header__contakts-comp_mail">support@prydbay.com</a></div>
-        </div>
-      </div>
-    </section>
-    <section class="header__bottom">
-      <div class="center-layout">
-        <nav class="header__menu">
-          <ul class="header__menu-list">
-            <li class="header__menu-item">                        <a href="#" class="header__menu-link header__menu-link_active">Главная</a></li>
-            <li class="header__menu-item"><a href="#" class="header__menu-link header__menu-link">Каталог</a></li>
-            <li class="header__menu-item"><a href="#" class="header__menu-link">Контакты</a></li>
-            <li class="header__menu-item"><a href="#" class="header__menu-link">Блог</a></li>
-            <li class="header__menu-item"><a href="#" class="header__menu-link">Новости</a></li>
+  <div class="page">
+    <head>
+      <meta charset="utf-8">
+      <title>prydbay</title>
+      <!-- build:css css/vendor.css-->
+      <!-- bower:css-->
+      <link rel="stylesheet" href="bower_components/normalize.css/normalize.css" />
+      <!-- endbower -->
+      <link rel="stylesheet" href="css/jquery.bxslider.css">
+      <!-- endbuild-->
+      <!-- build:css css/main.css-->
+      <link rel="stylesheet" type="text/css" href="css/main.css">
+      <!-- endbuild-->
+    </head>
+    <header class="header">
+      <nav class="header__nav">
+        <div class="center-layout">
+          <ul class="header__list-profile"> 
+            <li class="header__list-profile-item"><a class="header__list-profile-link header__list-profile-link_profile">Профиль</a></li>
+            <li class="header__list-profile-item"><a class="header__list-profile-link header__list-profile-link_backet">Корзина</a></li>
+            <li class="header__list-profile-item"><a class="header__list-profile-link header__list-profile-link_check">Проверить</a></li>
           </ul>
-        </nav>
-        <div class="header__info">
-          <div class="header__search">
-            <form action="#" method="GET" class="header__info-form">
-              <div class="header__info-fake">
-                <input type="search" name="search" placeholder="Поиск..." class="header__info-input">
-                <input type="submit" class="header__info-submit">
-                <div class="fake-submit"></div>
-              </div>
-            </form>
-            <div id="header__price" class="header__price"><span class="header__price__number">1</span> шт. - <span class=".header__price__price">89372.99</span></div>
+          <ul class="header__list-enter">
+            <li class="header__list-enter-item"><a class="header__list-enter-link">Добро пожаловать!</a></li>
+            <li class="header__list-enter-item header__list-enter-item_enter"><a class="header__list-enter-link">Вход</a><span class="header__list-enter-link_line">|</span><a class="header__list-enter-link">Регистрация</a></li>
+            <li class="header__list-enter-item"><a class="header__list-enter-link header__list-enter-link_language">Русский</a></li>
+          </ul>
+        </div>
+      </nav>
+      <section class="header__logo">
+        <div class="center-layout"><a href="#" class="header__logo-link"><img src="img/logo.png" alt="Prydbay.com" class="header__logo-img"></a>
+          <div class="header__contakts">
+            <div class="header__contakts-tel"><a href="tel:+380636066357" class="header__contakts-tel_tel">+38 063 606 63 57</a><a href="tel:+380674602625" class="header__contakts-tel_fax">+38 067 460 26 25</a></div>
+            <div class="header__contakts-comp"><a href="skype:prydbay?chat" class="header__contakts-comp_skype">prydbay</a><a href="mailto:support@prydbay.com" class="header__contakts-comp_mail">support@prydbay.com</a></div>
           </div>
-          <div class="header__buy hide">
-            <div class="header__buy-img-wrap"><img src="img/buy-img.jpg" alt="buy-img" class="header__buy-img"></div>
-            <div class="header__buy-title">Samsung <span>galaxy s5</span></div>
-            <div class="header__buy-price">1 x <span class="header__buy-price">4896.99</span></div>
-            <div class="header__buy-price">Сумма: <span class="header__buy-price">4896.99</span></div>
-            <div class="header__buy-buttons">
-              <div class="header__buy-buttons header__buy-buttons_basket">Корзина</div>
-              <div class="header__buy-buttons header__buy-buttons_buy">Купить</div>
+        </div>
+      </section>
+      <section class="header__bottom">
+        <div class="center-layout">
+          <nav class="header__menu">
+            <ul class="header__menu-list">
+              <li class="header__menu-item">                        <a href="#" class="header__menu-link header__menu-link_active">Главная</a></li>
+              <li class="header__menu-item"><a href="#" class="header__menu-link header__menu-link">Каталог</a></li>
+              <li class="header__menu-item"><a href="#" class="header__menu-link">Контакты</a></li>
+              <li class="header__menu-item"><a href="#" class="header__menu-link">Блог</a></li>
+              <li class="header__menu-item"><a href="#" class="header__menu-link">Новости</a></li>
+            </ul>
+          </nav>
+          <div class="header__info">
+            <div class="header__search">
+              <form action="#" method="GET" class="header__info-form">
+                <div class="header__info-fake">
+                  <input type="search" name="search" placeholder="Поиск..." class="header__info-input">
+                  <input type="submit" class="header__info-submit">
+                  <div class="fake-submit"></div>
+                </div>
+              </form>
+              <div id="header__price" class="header__price"><span class="header__price__number">1</span> шт. - <span class=".header__price__price">89372.99</span></div>
+            </div>
+            <div class="header__buy hide">
+              <div class="header__buy-img-wrap"><img src="img/buy-img.jpg" alt="buy-img" class="header__buy-img"></div>
+              <div class="header__buy-title">Samsung <span>galaxy s5</span></div>
+              <div class="header__buy-price">1 x <span class="header__buy-price">4896.99</span></div>
+              <div class="header__buy-price">Сумма: <span class="header__buy-price">4896.99</span></div>
+              <div class="header__buy-buttons">
+                <div class="header__buy-buttons header__buy-buttons_basket">Корзина</div>
+                <div class="header__buy-buttons header__buy-buttons_buy">Купить</div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
+      </section>
+    </header>
+    <section class="slider">
+      <ul class="slider__list bxslider">
+        <li class="slider__item slider__item_first">
+          <div class="center-layout">
+            <div class="slider__content-img-wrapper"><img src="img/slider-phones.png" alt="slider-img" class="slider__content-img"></div>
+            <div class="slider__text">
+              <div class="slider__text-first">Samsung</div>
+              <div class="slider__text-second">Galaxy s5</div>
+              <div class="slider__text-third">устойчив к дождю, жидкостям, песку и пыли</div>
+            </div>
+          </div>
+        </li>
+        <li class="slider__item slider__item_first">
+          <div class="center-layout">
+            <div class="slider__content-img-wrapper"><img src="img/slider-phones.png" alt="slider-img" class="slider__content-img"></div>
+            <div class="slider__text">
+              <div class="slider__text-first">Samsung</div>
+              <div class="slider__text-second">Galaxy s5</div>
+              <div class="slider__text-third">устойчив к дождю, жидкостям, песку и пыли</div>
+            </div>
+          </div>
+        </li>
+      </ul>
     </section>
-  </header>
-  <section class="slider">
-    <ul class="slider__list bxslider">
-      <li class="slider__item slider__item_first">
-        <div class="center-layout">
-          <div class="slider__content-img-wrapper"><img src="img/slider-phones.png" alt="slider-img" class="slider__content-img"></div>
-          <div class="slider__text">
-            <div class="slider__text-first">Samsung</div>
-            <div class="slider__text-second">Galaxy s5</div>
-            <div class="slider__text-third">устойчив к дождю, жидкостям, песку и пыли</div>
+    <section class="main-content">
+      <div class="center-layout">
+        <main class="main">
+          <h2 class="main__title">Наши продукты</h2>
+          <nav class="main__our-products">
+            <ul class="main__our-products-nav-list">
+              <li class="main__our-products-nav-item"><a class="main__our-products-nav-link">Новинки</a></li>
+              <li class="main__our-products-nav-item"><a class="main__our-products-nav-link">Популярное</a></li>
+              <li class="main__our-products-nav-item"><a class="main__our-products-nav-link">Бестселлеры</a></li>
+              <li class="main__our-products-nav-item"><a class="main__our-products-nav-link">Скидки</a></li>
+            </ul>
+            <ul class="main__our-products-phones-list">
+              <li class="main__our-products-phones-item"><a class="main__our-products-phones-link">
+                  <div class="main__our-products-phones-img-wrap"><img src="img/phone-1.jpg" alt="phone-1" class="main__our-products-phones-img">
+                    <div class="main__our-products-discount-price"><span class="main__our-products-phones-old">$650.99</span><span class="main__our-products-phones-new">$640.99</span></div>
+                  </div></a>
+                <ul class="main__our-products-star-list">
+                  <li class="main__our-products-star-item main__our-products-star-item_active"></li>
+                  <li class="main__our-products-star-item main__our-products-star-item_active"></li>
+                  <li class="main__our-products-star-item main__our-products-star-item_active"></li>
+                  <li class="main__our-products-star-item main__our-products-star-item_active"></li>
+                  <li class="main__our-products-star-item"></li>
+                </ul>
+                <p class="main__our-products-phone-text">Galaxy S4 <br> Black Edition</p><span class="main__our-products-phones-button">В корзину</span>
+              </li>
+              <li class="main__our-products-phones-item"><a class="main__our-products-phones-link">
+                  <div class="main__our-products-phones-img-wrap"><img src="img/phone-2.jpg" alt="phone-2" class="main__our-products-phones-img">
+                    <div class="main__our-products-discount-price"><span class="main__our-products-phones-old">$650.99</span><span class="main__our-products-phones-new">$640.99</span></div>
+                  </div></a>
+                <ul class="main__our-products-star-list">
+                  <li class="main__our-products-star-item main__our-products-star-item_active"></li>
+                  <li class="main__our-products-star-item main__our-products-star-item_active"></li>
+                  <li class="main__our-products-star-item main__our-products-star-item_active"></li>
+                  <li class="main__our-products-star-item main__our-products-star-item_active"></li>
+                  <li class="main__our-products-star-item"></li>
+                </ul>
+                <p class="main__our-products-phone-text">Galaxy Core Dous <br> (La Fleur)</p><span class="main__our-products-phones-button">В корзину</span>
+              </li>
+              <li class="main__our-products-phones-item"><a class="main__our-products-phones-link">
+                  <div class="main__our-products-phones-img-wrap"><img src="img/phone-3.jpg" alt="phone-3" class="main__our-products-phones-img">
+                    <div class="main__our-products-discount-price"><span class="main__our-products-phones-old">$650.99</span><span class="main__our-products-phones-new">$640.99</span></div>
+                  </div></a>
+                <ul class="main__our-products-star-list">
+                  <li class="main__our-products-star-item main__our-products-star-item_active"></li>
+                  <li class="main__our-products-star-item main__our-products-star-item_active"></li>
+                  <li class="main__our-products-star-item main__our-products-star-item_active"></li>
+                  <li class="main__our-products-star-item main__our-products-star-item_active"></li>
+                  <li class="main__our-products-star-item"></li>
+                </ul>
+                <p class="main__our-products-phone-text">Galaxy S5</p><span class="main__our-products-phones-button">В корзину</span>
+              </li>
+              <li class="main__our-products-phones-item"><a class="main__our-products-phones-link">
+                  <div class="main__our-products-phones-img-wrap"><img src="img/phone-4.jpg" alt="phone-4" class="main__our-products-phones-img">
+                    <div class="main__our-products-discount-price"><span class="main__our-products-phones-old">$650.99</span><span class="main__our-products-phones-new">$640.99</span></div>
+                  </div></a>
+                <ul class="main__our-products-star-list">
+                  <li class="main__our-products-star-item main__our-products-star-item_active"></li>
+                  <li class="main__our-products-star-item main__our-products-star-item_active"></li>
+                  <li class="main__our-products-star-item main__our-products-star-item_active"></li>
+                  <li class="main__our-products-star-item main__our-products-star-item_active"></li>
+                  <li class="main__our-products-star-item"></li>
+                </ul>
+                <p class="main__our-products-phone-text">UHD-телевизор <br> UE40HU7000UXUA</p><span class="main__our-products-phones-button">В корзину</span>
+              </li>
+              <li class="main__our-products-phones-item"><a class="main__our-products-phones-link">
+                  <div class="main__our-products-phones-img-wrap"><img src="img/phone-5.jpg" alt="phone-5" class="main__our-products-phones-img">
+                    <div class="main__our-products-discount-price"><span class="main__our-products-phones-old">$650.99</span><span class="main__our-products-phones-new">$640.99</span></div>
+                  </div></a>
+                <ul class="main__our-products-star-list">
+                  <li class="main__our-products-star-item main__our-products-star-item_active"></li>
+                  <li class="main__our-products-star-item main__our-products-star-item_active"></li>
+                  <li class="main__our-products-star-item main__our-products-star-item_active"></li>
+                  <li class="main__our-products-star-item main__our-products-star-item_active"></li>
+                  <li class="main__our-products-star-item"></li>
+                </ul>
+                <p class="main__our-products-phone-text">Samsung <br> NX30</p><span class="main__our-products-phones-button">В корзину</span>
+              </li>
+              <li class="main__our-products-phones-item"><a class="main__our-products-phones-link">
+                  <div class="main__our-products-phones-img-wrap"><img src="img/phone-6.jpg" alt="phone-6" class="main__our-products-phones-img">
+                    <div class="main__our-products-discount-price"><span class="main__our-products-phones-old">$650.99</span><span class="main__our-products-phones-new">$640.99</span></div>
+                  </div></a>
+                <ul class="main__our-products-star-list">
+                  <li class="main__our-products-star-item main__our-products-star-item_active"></li>
+                  <li class="main__our-products-star-item main__our-products-star-item_active"></li>
+                  <li class="main__our-products-star-item main__our-products-star-item_active"></li>
+                  <li class="main__our-products-star-item main__our-products-star-item_active"></li>
+                  <li class="main__our-products-star-item"></li>
+                </ul>
+                <p class="main__our-products-phone-text">Монитор <br> Samsung SD590</p><span class="main__our-products-phones-button">В корзину</span>
+              </li>
+            </ul>
+          </nav>
+          <h2 class="main__title">Добро пожаловать на Prydbay</h2>
+          <div class="main__prydbay-content">
+            <div class="main__prydbay-text">
+              <p class="main__prydbay-p">Вы не представляете жизни без мобильной связи? Вам знакома ситуация, когда деньги на счету заканчиваются в самый не подходящий момент? Вы имеете доступ к Интернет? </p>
+              <p class="main__prydbay-p">Интернет-магазин Prydbay.com создан именно для Вас!</p>
+            </div>
+            <div class="main__prydbay-img-wrap"><img src="img/pridbay.jpg" alt="#" class="main__prydbay-img"></div>
           </div>
-        </div>
-      </li>
-      <li class="slider__item slider__item_first">
-        <div class="center-layout">
-          <div class="slider__content-img-wrapper"><img src="img/slider-phones.png" alt="slider-img" class="slider__content-img"></div>
-          <div class="slider__text">
-            <div class="slider__text-first">Samsung</div>
-            <div class="slider__text-second">Galaxy s5</div>
-            <div class="slider__text-third">устойчив к дождю, жидкостям, песку и пыли</div>
-          </div>
-        </div>
-      </li>
-    </ul>
-  </section>
-  <section class="main-content">
-    <div class="center-layout">
-      <main class="main">
-        <h2 class="main__title">Наши продукты</h2>
-        <nav class="main__our-products">
-          <ul class="main__our-products-nav-list">
-            <li class="main__our-products-nav-item"><a class="main__our-products-nav-link">Новинки</a></li>
-            <li class="main__our-products-nav-item"><a class="main__our-products-nav-link">Популярное</a></li>
-            <li class="main__our-products-nav-item"><a class="main__our-products-nav-link">Бестселлеры</a></li>
-            <li class="main__our-products-nav-item"><a class="main__our-products-nav-link">Скидки</a></li>
-          </ul>
+          <h2 class="main__title main__title_float">Товары со скидкой</h2>
+          <div class="main__controls"><span class="main__control main__control-left"></span><span class="main__control main__control-right"></span></div>
           <ul class="main__our-products-phones-list">
-            <li class="main__our-products-phones-item"><a class="main__our-products-phones-link">
-                <div class="main__our-products-phones-img-wrap"><img src="img/phone-1.jpg" alt="phone-1" class="main__our-products-phones-img">
-                  <div class="main__our-products-discount-price"><span class="main__our-products-phones-old">$650.99</span><span class="main__our-products-phones-new">$640.99</span></div>
-                </div></a>
+            <li class="main__our-products-phones-item"><a class="main__our-products-phones-link"><span class="main__our-products-discount">-7%</span><img src="img/phone-1.jpg" alt="phone-1" class="main__our-products-phones-img"></a>
               <ul class="main__our-products-star-list">
                 <li class="main__our-products-star-item main__our-products-star-item_active"></li>
                 <li class="main__our-products-star-item main__our-products-star-item_active"></li>
@@ -121,10 +210,7 @@
               </ul>
               <p class="main__our-products-phone-text">Galaxy S4 <br> Black Edition</p><span class="main__our-products-phones-button">В корзину</span>
             </li>
-            <li class="main__our-products-phones-item"><a class="main__our-products-phones-link">
-                <div class="main__our-products-phones-img-wrap"><img src="img/phone-2.jpg" alt="phone-2" class="main__our-products-phones-img">
-                  <div class="main__our-products-discount-price"><span class="main__our-products-phones-old">$650.99</span><span class="main__our-products-phones-new">$640.99</span></div>
-                </div></a>
+            <li class="main__our-products-phones-item"><a class="main__our-products-phones-link"><span class="main__our-products-discount">-3%</span><img src="img/phone-2.jpg" alt="phone-2" class="main__our-products-phones-img"></a>
               <ul class="main__our-products-star-list">
                 <li class="main__our-products-star-item main__our-products-star-item_active"></li>
                 <li class="main__our-products-star-item main__our-products-star-item_active"></li>
@@ -134,10 +220,7 @@
               </ul>
               <p class="main__our-products-phone-text">Galaxy Core Dous <br> (La Fleur)</p><span class="main__our-products-phones-button">В корзину</span>
             </li>
-            <li class="main__our-products-phones-item"><a class="main__our-products-phones-link">
-                <div class="main__our-products-phones-img-wrap"><img src="img/phone-3.jpg" alt="phone-3" class="main__our-products-phones-img">
-                  <div class="main__our-products-discount-price"><span class="main__our-products-phones-old">$650.99</span><span class="main__our-products-phones-new">$640.99</span></div>
-                </div></a>
+            <li class="main__our-products-phones-item"><a class="main__our-products-phones-link"><span class="main__our-products-discount">-12%</span><img src="img/phone-3.jpg" alt="phone-3" class="main__our-products-phones-img"></a>
               <ul class="main__our-products-star-list">
                 <li class="main__our-products-star-item main__our-products-star-item_active"></li>
                 <li class="main__our-products-star-item main__our-products-star-item_active"></li>
@@ -147,205 +230,140 @@
               </ul>
               <p class="main__our-products-phone-text">Galaxy S5</p><span class="main__our-products-phones-button">В корзину</span>
             </li>
-            <li class="main__our-products-phones-item"><a class="main__our-products-phones-link">
-                <div class="main__our-products-phones-img-wrap"><img src="img/phone-4.jpg" alt="phone-4" class="main__our-products-phones-img">
-                  <div class="main__our-products-discount-price"><span class="main__our-products-phones-old">$650.99</span><span class="main__our-products-phones-new">$640.99</span></div>
-                </div></a>
-              <ul class="main__our-products-star-list">
-                <li class="main__our-products-star-item main__our-products-star-item_active"></li>
-                <li class="main__our-products-star-item main__our-products-star-item_active"></li>
-                <li class="main__our-products-star-item main__our-products-star-item_active"></li>
-                <li class="main__our-products-star-item main__our-products-star-item_active"></li>
-                <li class="main__our-products-star-item"></li>
-              </ul>
-              <p class="main__our-products-phone-text">UHD-телевизор <br> UE40HU7000UXUA</p><span class="main__our-products-phones-button">В корзину</span>
-            </li>
-            <li class="main__our-products-phones-item"><a class="main__our-products-phones-link">
-                <div class="main__our-products-phones-img-wrap"><img src="img/phone-5.jpg" alt="phone-5" class="main__our-products-phones-img">
-                  <div class="main__our-products-discount-price"><span class="main__our-products-phones-old">$650.99</span><span class="main__our-products-phones-new">$640.99</span></div>
-                </div></a>
-              <ul class="main__our-products-star-list">
-                <li class="main__our-products-star-item main__our-products-star-item_active"></li>
-                <li class="main__our-products-star-item main__our-products-star-item_active"></li>
-                <li class="main__our-products-star-item main__our-products-star-item_active"></li>
-                <li class="main__our-products-star-item main__our-products-star-item_active"></li>
-                <li class="main__our-products-star-item"></li>
-              </ul>
-              <p class="main__our-products-phone-text">Samsung <br> NX30</p><span class="main__our-products-phones-button">В корзину</span>
-            </li>
-            <li class="main__our-products-phones-item"><a class="main__our-products-phones-link">
-                <div class="main__our-products-phones-img-wrap"><img src="img/phone-6.jpg" alt="phone-6" class="main__our-products-phones-img">
-                  <div class="main__our-products-discount-price"><span class="main__our-products-phones-old">$650.99</span><span class="main__our-products-phones-new">$640.99</span></div>
-                </div></a>
-              <ul class="main__our-products-star-list">
-                <li class="main__our-products-star-item main__our-products-star-item_active"></li>
-                <li class="main__our-products-star-item main__our-products-star-item_active"></li>
-                <li class="main__our-products-star-item main__our-products-star-item_active"></li>
-                <li class="main__our-products-star-item main__our-products-star-item_active"></li>
-                <li class="main__our-products-star-item"></li>
-              </ul>
-              <p class="main__our-products-phone-text">Монитор <br> Samsung SD590</p><span class="main__our-products-phones-button">В корзину</span>
-            </li>
           </ul>
-        </nav>
-        <h2 class="main__title">Добро пожаловать на Prydbay</h2>
-        <p class="main__prydbay-p">Вы не представляете жизни без мобильной связи? Вам знакома ситуация, когда деньги на счету заканчиваются в самый не подходящий момент? Вы имеете доступ к Интернет? </p>
-        <p class="main__prydbay-p">Интернет-магазин Prydbay.com создан именно для Вас!</p>
-        <h2 class="main__title">Товары со скидкой</h2>
+        </main>
+        <aside class="aside">
+          <div class="aside__first">
+            <div class="aside__first-title">Узнай первым</div>
+            <div class="aside__first-text">Получить всю последнюю информацию о событиях, продажах и предложениях.</div>
+            <div class="aside__first-text">Подпишитесь на нашу рассылку сегодня.</div>
+            <div class="aside__first-form">
+              <input type="email" placeholder="Ваш Email">
+              <input type="submit" value="Подписаться">
+            </div>
+          </div>
+          <article class="aside__news">
+            <div class="aside__news-title">Новости</div>
+            <div class="main__controls"><span class="main__control main__control-left"></span><span class="main__control main__control-right"></span></div>
+            <div class="aside__news-img-wrap"><img src="img/sidebar-slider-img-1.jpg" alt="img" class="aside__news-img"></div>
+            <div class="aside__news-img-title">Новая скидка в рамках акции выходного дня!</div>
+            <div class="aside__news-img-text"> Пришел черед радоваться любителям World of Warcraft, ведь теперь можно приобрести целых 60 дней игрового...</div>
+            <div class="aside__news-info">
+              <div class="aside__news-more">Подробнее...</div>
+              <div class="aside__news-date">06.06.2014</div>
+            </div>
+            <div class="aside__news-img-wrap"><img src="img/sidebar-slider-img-1.jpg" alt="img" class="aside__news-img"></div>
+            <div class="aside__news-img-title">Пришло время первых Горячих выходных лета. </div>
+            <div class="aside__news-img-text"> В рамках акции на этих выходных у вас будет потрясающая возможность купить русскую версию DIABLO III по...</div>
+            <div class="aside__news-info">
+              <div class="aside__news-more">Подробнее...</div>
+              <div class="aside__news-date">30.05.2014</div>
+            </div>
+          </article>
+          <article class="aside__weekends">
+            <p class="aside__weekends-text"> Горячие выходные на <span class="bold">Prydbay.<span class="green">com</span></span></p>
+            <p class="aside__weekends-text">Каждую неделю с 18:00 пятницы до 9:00 понедельника популярные товары по  сниженным ценам.</p>
+            <ul class="aside__weekends-dots-list">
+              <li class="aside__weekends-dots-list"><a class="aside__weekends-dots-list"></a></li>
+              <li class="aside__weekends-dots-list"><a class="aside__weekends-dots-list aside__weekends-dots-list_active"></a></li>
+              <li class="aside__weekends-dots-list"><a class="aside__weekends-dots-list"></a></li>
+            </ul>
+          </article>
+        </aside>
+      </div>
+    </section>
+    <div class="center-layout">
+      <section class="brands">
+        <h2 class="main__title main__title_float">Брэнды</h2>
         <div class="main__controls"><span class="main__control main__control-left"></span><span class="main__control main__control-right"></span></div>
-        <ul class="main__our-products-phones-list">
-          <li class="main__our-products-phones-item"><a class="main__our-products-phones-link"><span class="main__our-products-discount">-7%</span><img src="img/phone-1.jpg" alt="phone-1" class="main__our-products-phones-img"></a>
-            <ul class="main__our-products-star-list">
-              <li class="main__our-products-star-item main__our-products-star-item_active"></li>
-              <li class="main__our-products-star-item main__our-products-star-item_active"></li>
-              <li class="main__our-products-star-item main__our-products-star-item_active"></li>
-              <li class="main__our-products-star-item main__our-products-star-item_active"></li>
-              <li class="main__our-products-star-item"></li>
-            </ul>
-            <p class="main__our-products-phone-text">Galaxy S4 Black Edition</p><span class="main__our-products-phones-button">В корзину</span>
-          </li>
-          <li class="main__our-products-phones-item"><span class="main__our-products-discount">-7%</span><a class="main__our-products-phones-link"><img src="img/phone-2.jpg" alt="phone-2" class="main__our-products-phones-img"></a>
-            <ul class="main__our-products-star-list">
-              <li class="main__our-products-star-item main__our-products-star-item_active"></li>
-              <li class="main__our-products-star-item main__our-products-star-item_active"></li>
-              <li class="main__our-products-star-item main__our-products-star-item_active"></li>
-              <li class="main__our-products-star-item main__our-products-star-item_active"></li>
-              <li class="main__our-products-star-item"></li>
-            </ul>
-            <p class="main__our-products-phone-text">Galaxy Core Dous (La Fleur)</p><span class="main__our-products-phones-button">В корзину</span>
-          </li>
-          <li class="main__our-products-phones-item"><span class="main__our-products-discount">-7%</span><a class="main__our-products-phones-link"><img src="img/phone-3.jpg" alt="phone-3" class="main__our-products-phones-img"></a>
-            <ul class="main__our-products-star-list">
-              <li class="main__our-products-star-item main__our-products-star-item_active"></li>
-              <li class="main__our-products-star-item main__our-products-star-item_active"></li>
-              <li class="main__our-products-star-item main__our-products-star-item_active"></li>
-              <li class="main__our-products-star-item main__our-products-star-item_active"></li>
-              <li class="main__our-products-star-item"></li>
-            </ul>
-            <p class="main__our-products-phone-text">Galaxy S5</p><span class="main__our-products-phones-button">В корзину</span>
-          </li>
+        <ul class="brands-list">
+          <li class="brands-item"><a class="brands-link brands-link_blizzard"></a></li>
+          <li class="brands-item"><a class="brands-link brands-link_ssr"></a></li>
+          <li class="brands-item"><a class="brands-link brands-link_kyivstar"></a></li>
+          <li class="brands-item"><a class="brands-link brands-link_mts"></a></li>
+          <li class="brands-item"><a class="brands-link brands-link_skype"></a></li>
+          <li class="brands-item"><a class="brands-link brands-link_playstation"></a></li>
         </ul>
-        <h2 class="main__title">Брэнды</h2>
-        <div class="main__controls"><span class="main__control main__control-left"></span><span class="main__control main__control-right"></span></div>
-        <ul class="main__brands-list">
-          <li class="main__brands-item"><a class="main__brands-link main__brands-link_blizzard"></a></li>
-          <li class="main__brands-item"><a class="main__brands-link main__brands-link_ssr"></a></li>
-          <li class="main__brands-item"><a class="main__brands-link main__brands-link_kyivstar"></a></li>
-          <li class="main__brands-item"><a class="main__brands-link main__brands-link_mts"></a></li>
-          <li class="main__brands-item"><a class="main__brands-link main__brands-link_skype"></a></li>
-          <li class="main__brands-item"><a class="main__brands-link main__brands-link_playstation"></a></li>
-        </ul>
-      </main>
-      <aside class="aside">
-        <div class="aside__first">
-          <div class="aside__first-title">Узнай первым</div>
-          <div class="aside__first-text">Получить всю последнюю информацию о событиях, продажах и предложениях.</div>
-          <div class="aside__first-text">Подпишитесь на нашу рассылку сегодня.</div>
-          <div class="aside__first-form">
-            <input type="email" placeholder="Ваш Email">
-            <input type="submit" value="Подписаться">
+      </section>
+    </div>
+    <section class="last-bought">
+      <div class="center-layout">
+        <div class="last-bought__logo"> </div>
+        <p class="last-bought__text">Последняя покупка была совершена: 4 мин 58 сек назад</p>
+      </div>
+    </section>
+    <div class="footer-fix"></div>
+    <footer class="footer">
+      <div class="center-layout">
+        <div class="footer__text">
+          <div class="footer__info">
+            <p class="footer__text-title">Ссылки</p>
+            <ul class="footer__list">
+              <li class="footer__item"><a class="footer__link">Мой аккаунт</a></li>
+              <li class="footer__item"><a class="footer__link">Личная информация</a></li>
+              <li class="footer__item"><a class="footer__link">Адреса</a></li>
+              <li class="footer__item"><a class="footer__link">Скидка</a></li>
+              <li class="footer__item"><a class="footer__link">История заказов</a></li>
+              <li class="footer__item"><a class="footer__link">Ваши ваучеры</a></li>
+            </ul>
+          </div>
+          <div class="footer__info">
+            <p class="footer__text-title">Информация</p>
+            <ul class="footer__list">
+              <li class="footer__item"><a class="footer__link">Новые продукты</a></li>
+              <li class="footer__item"><a class="footer__link">Лидеры продаж</a></li>
+              <li class="footer__item"><a class="footer__link">Скидки</a></li>
+              <li class="footer__item"><a class="footer__link">Производители</a></li>
+              <li class="footer__item"><a class="footer__link">Поставщики</a></li>
+              <li class="footer__item"><a class="footer__link">Наши магазины</a></li>
+            </ul>
+          </div>
+          <div class="footer__info">
+            <p class="footer__text-title">Контакты</p>
+            <ul class="footer__list">
+              <li class="footer__item">Украина</li>
+              <li class="footer__item">Чернигов 14000</li>
+              <li class="footer__item">ул. Черниговская 7/48 </li>
+              <li class="footer__item">Рабочие дни: Пн-Пт </li>
+              <li class="footer__item">Время: с 10:00 до 18:00 </li>
+              <li class="footer__item"> <a href="mailto:support@prydbay.com" class="footer__email-link">support@prydbay.com </a></li>
+            </ul>
+          </div>
+          <div class="footer__info footer__info_member">
+            <p class="footer__text-title">Мы вконтакте</p>
+            <p class="footer__list-member">Участники: <span>3418</span></p>
+            <ul class="footer__list">
+              <li class="footer__item-member"><a class="footer__link-member"><img src="img/people-1.png" alt="people"></a></li>
+              <li class="footer__item-member"><a class="footer__link-member"><img src="img/people-2.png" alt="people"></a></li>
+              <li class="footer__item-member"><a class="footer__link-member"><img src="img/people-3.png" alt="people"></a></li>
+              <li class="footer__item-member"><a class="footer__link-member"><img src="img/people-4.png" alt="people"></a></li>
+              <li class="footer__item-member"><a class="footer__link-member"><img src="img/people-5.png" alt="people"></a></li>
+              <li class="footer__item-member"><a class="footer__link-member"><img src="img/people-6.png" alt="people"></a></li>
+              <li class="footer__item-member"><a class="footer__link-member"><img src="img/people-7.png" alt="people"></a></li>
+              <li class="footer__item-member"><a class="footer__link-member"><img src="img/people-8.png" alt="people"></a></li>
+            </ul>
           </div>
         </div>
-        <article class="aside__news">
-          <div class="aside__news-title">Новости</div>
-          <div class="main__controls"><span class="main__control main__control-left"></span><span class="main__control main__control-right"></span></div>
-          <div class="aside__news-img-wrap"><img src="img/sidebar-slider-img-1.jpg" alt="img" class="aside__news-img"></div>
-          <div class="aside__news-img-title">Новая скидка в рамках акции выходного дня!</div>
-          <div class="aside__news-img-text"> Пришел черед радоваться любителям World of Warcraft, ведь теперь можно приобрести целых 60 дней игрового...</div>
-          <div class="aside__news-info">
-            <div class="aside__news-more">Подробнее...</div>
-            <div class="aside__news-date">06.06.2014</div>
-          </div>
-          <div class="aside__news-img-wrap"><img src="img/sidebar-slider-img-1.jpg" alt="img" class="aside__news-img"></div>
-          <div class="aside__news-img-title">Пришло время первых Горячих выходных лета. </div>
-          <div class="aside__news-img-text"> В рамках акции на этих выходных у вас будет потрясающая возможность купить русскую версию DIABLO III по...</div>
-          <div class="aside__news-info">
-            <div class="aside__news-more">Подробнее...</div>
-            <div class="aside__news-date">30.05.2014</div>
-          </div>
-        </article>
-        <article class="aside__weekends">
-          <p class="aside__weekends-text"> Горячие выходные на <span class="bold">Prydbay.<span class="green">com</span></span></p>
-          <p class="aside__weekends-text">Каждую неделю с 18:00 пятницы до 9:00 понедельника популярные товары по  сниженным ценам.</p>
-          <ul class="aside__weekends-dots-list">
-            <li class="aside__weekends-dots-list"><a class="aside__weekends-dots-list"></a></li>
-            <li class="aside__weekends-dots-list"><a class="aside__weekends-dots-list aside__weekends-dots-list_active"></a></li>
-            <li class="aside__weekends-dots-list"><a class="aside__weekends-dots-list"></a></li>
+        <div class="footer__copy">
+          <ul class="footer__copy-social-list">
+            <li class="footer__copy-social-item"><a class="footer__copy-social-link footer__copy-social-link_face"></a></li>
+            <li class="footer__copy-social-item"><a class="footer__copy-social-link footer__copy-social-link_twitter"></a></li>
+            <li class="footer__copy-social-item"><a class="footer__copy-social-link footer__copy-social-link_vk"></a></li>
+            <li class="footer__copy-social-item"><a class="footer__copy-social-link footer__copy-social-link_google"></a></li>
+            <li class="footer__copy-social-item"><a class="footer__copy-social-link footer__copy-social-link_mail"></a></li>
           </ul>
-        </article>
-      </aside>
-    </div>
-  </section>
-  <section class="last-bought">
-    <div class="footer-logo"></div>
-    <p class="last-bought__text">Последняя покупка была совершена: 4 мин 58 сек назад</p>
-  </section>
-  <footer class="footer hide">
-    <div class="footer__text">
-      <div class="footer__info">
-        <p class="footer__text-title">Ссылки</p>
-        <ul class="footer__list">
-          <li class="footer__item"><a class="footer__link">Мой аккаунт</a></li>
-          <li class="footer__item"><a class="footer__link">Личная информация</a></li>
-          <li class="footer__item"><a class="footer__link">Адреса</a></li>
-          <li class="footer__item"><a class="footer__link">Скидка</a></li>
-          <li class="footer__item"><a class="footer__link">История заказов</a></li>
-          <li class="footer__item"><a class="footer__link">Ваши ваучеры</a></li>
-        </ul>
+          <p class="footer__copy-copyright">&copy; 2014 Prydbay.com  All Rights Reserved.</p>
+        </div>
       </div>
-      <div class="footer__info">
-        <p class="footer__text-title">Информация</p>
-        <ul class="footer__list">
-          <li class="footer__item"><a class="footer__link">Новые продукты</a></li>
-          <li class="footer__item"><a class="footer__link">Лидеры продаж</a></li>
-          <li class="footer__item"><a class="footer__link">Скидки</a></li>
-          <li class="footer__item"><a class="footer__link">Производители</a></li>
-          <li class="footer__item"><a class="footer__link">Поставщики</a></li>
-          <li class="footer__item"><a class="footer__link">Наши магазины</a></li>
-        </ul>
-      </div>
-      <div class="footer__info">
-        <p class="footer__text-title">Контакты</p>
-        <ul class="footer__list">
-          <li class="footer__item"><a class="footer__link">Украина</a></li>
-          <li class="footer__item"><a class="footer__link">Чернигов 14000</a></li>
-          <li class="footer__item"><a class="footer__link">ул. Черниговская 7/48</a></li>
-          <li class="footer__item"><a class="footer__link">Рабочие дни: Пн-Пт</a></li>
-          <li class="footer__item"><a class="footer__link">Время: с 10:00 до 18:00</a></li>
-          <li class="footer__item"><a class="footer__link">support@prydbay.com</a></li>
-        </ul>
-      </div>
-      <div class="footer__info">
-        <p class="footer__text-title">Мы вконтакте</p>
-        <div class="pfooter__list-member">Участники: <span>3418</span></div>
-        <ul class="footer__list">
-          <li class="footer__item"><a class="footer__link"><img src="img/people-1.png" alt="people"></a></li>
-          <li class="footer__item"><a class="footer__link"><img src="img/people-2.png" alt="people"></a></li>
-          <li class="footer__item"><a class="footer__link"><img src="img/people-3.png" alt="people"></a></li>
-          <li class="footer__item"><a class="footer__link"><img src="img/people-4.png" alt="people"></a></li>
-          <li class="footer__item"><a class="footer__link"><img src="img/people-5.png" alt="people"></a></li>
-          <li class="footer__item"><a class="footer__link"> <img src="img/people-6.png" alt="people"></a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="footer__copy">
-      <ul class="footer__copy-social-list">
-        <li class="footer__copy-social-item"><a class="footer__copy-social-link footer__copy-social-link_face"></a></li>
-        <li class="footer__copy-social-item"><a class="footer__copy-social-link footer__copy-social-link_twitter"></a></li>
-        <li class="footer__copy-social-item"><a class="footer__copy-social-link footer__copy-social-link_vk"></a></li>
-        <li class="footer__copy-social-item"><a class="footer__copy-social-link footer__copy-social-link_google"></a></li>
-        <li class="footer__copy-social-item"><a class="footer__copy-social-link footer__copy-social-link_mail"></a></li>
-      </ul>
-      <p class="footer__copy-copyright">&copy; 2014 Prydbay.com  All Rights Reserved.</p>
-    </div>
-  </footer>
-  <!-- build:js js/vendor.js-->
-  <!-- bower:js-->
-  <script src="bower_components/jquery/dist/jquery.js"></script>
-  <!-- endbower-->
-  <script src="js/jquery.bxslider.js"></script>
-  <!-- endbuild-->
-  <!-- build:js js/main.js-->
-  <script src="js/main.js"></script>
-  <!-- endbuild -->
+    </footer>
+    <!-- build:js js/vendor.js-->
+    <!-- bower:js-->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <!-- endbower-->
+    <script src="js/jquery.bxslider.js"></script>
+    <!-- endbuild-->
+    <!-- build:js js/main.js-->
+    <script src="js/main.js"></script>
+    <!-- endbuild -->
+  </div>
 </html>

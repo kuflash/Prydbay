@@ -4,7 +4,7 @@
 .show {
   display: block; }
 
-.clear, .center-layout:after, .header__nav:after, .header__list-profile:after, .header__list-enter:after, .header__contakts:after, .header__menu-list:after, .header__info:after, .main__our-products-nav-list, .main__our-products-phones-list, .main__our-products-star-list:after {
+.clear, .center-layout:after, .header__nav:after, .header__list-profile:after, .header__list-enter:after, .header__contakts:after, .header__menu-list:after, .header__info:after, .main__our-products-nav-list, .main__our-products-phones-list, .main__our-products-star-list:after, .main__prydbay-content:after, .brands:after, .footer__text:after, .footer__copy-social-list:after {
   display: table;
   content: "";
   height: 0;
@@ -330,6 +330,8 @@ body {
   width: 695px;
   float: left;
   /* menu */ }
+  .main-content {
+    margin-bottom: 10px; }
   .main__title {
     color: #4b4b4b;
     position: relative;
@@ -337,6 +339,10 @@ body {
     font-weight: normal;
     font-size: 32px;
     margin-bottom: 13px; }
+    .main__title_float {
+      float: left;
+      margin: 0;
+      margin-bottom: 30px; }
     .main__title:before {
       display: inline-block;
       content: "";
@@ -443,7 +449,8 @@ body {
     list-style-type: none;
     padding: 0;
     margin: 0;
-    margin-left: 60px; }
+    margin-left: 60px;
+    margin-bottom: 8px; }
   .main__our-products-star-item {
     width: 16px;
     height: 15px;
@@ -458,12 +465,15 @@ body {
   .main__our-products-phone-text {
     text-align: center;
     color: #575757;
-    height: 33px;
+    height: 42px;
     text-overflow: ellipsis;
     overflow: hidden;
-    white-space: nowrap; }
+    white-space: nowrap;
+    font-size: 18px;
+    margin-bottom: 10px;
+    margin-top: 0; }
   .main__our-products-phones-button {
-    width: 135px;
+    width: 115px;
     height: 45px;
     line-height: 45px;
     border-radius: 0;
@@ -476,7 +486,10 @@ body {
     text-align: center;
     cursor: pointer;
     transition: .3s;
-    background: linear-gradient(to bottom, #949494, #696969); }
+    background: linear-gradient(to bottom, #949494, #696969);
+    color: #fff;
+    font-size: 18px;
+    font-weight: normal; }
     .main__our-products-phones-button:hover {
       background: #7f7f7f; }
     .main__our-products-phones-button:before {
@@ -485,7 +498,232 @@ body {
     .main__our-products-phones-button:hover {
       background: #8dde57;
       background: linear-gradient(to bottom, #92e45c, #76c343); }
+  .main__our-products-discount {
+    background: #d50000;
+    display: inline-block;
+    width: 70px;
+    height: 30px;
+    position: absolute;
+    z-index: 1;
+    left: 10px;
+    color: #fff;
+    padding-top: 15px; }
+  .main__prydbay-content {
+    margin-bottom: 25px; }
+  .main__prydbay-text {
+    color: #636363;
+    float: left;
+    width: 350px; }
+  .main__prydbay-p {
+    margin-top: 0; }
+  .main__prydbay-img-wrap {
+    float: right; }
+  .main__controls {
+    float: right; }
+  .main__control {
+    width: 45px;
+    height: 45px;
+    background: #89d953;
+    background: linear-gradient(to bottom, #92e35c, #78c645);
+    display: inline-block;
+    margin-left: 10px;
+    cursor: pointer;
+    position: relative; }
+    .main__control:hover {
+      background: #f8faf5;
+      background: linear-gradient(to bottom, #fefefe, #f3f7ef);
+      box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.2); }
+    .main__control:before {
+      position: absolute;
+      width: 0;
+      height: 0;
+      display: block;
+      content: "";
+      border: 10px solid #fff;
+      top: 14px;
+      left: 13px;
+      transform: rotate(45deg); }
+    .main__control-left:before {
+      border-right-color: transparent;
+      border-top-color: transparent;
+      left: 17px; }
+    .main__control-right:before {
+      border-left-color: transparent;
+      border-bottom-color: transparent;
+      left: 8px; }
+    .main__control-left:hover:before {
+      border-left-color: #71bc3f;
+      border-bottom-color: #71bc3f; }
+    .main__control-right:hover:before {
+      border-right-color: #71bc3f;
+      border-top-color: #71bc3f; }
 
 .aside {
   width: 250px;
   float: right; }
+
+/* brands */
+.brands {
+  width: 100%;
+  margin-bottom: 50px; }
+  .brands-list {
+    clear: both;
+    list-style-type: none;
+    padding: 0;
+    margin: 0; }
+  .brands-item {
+    float: left;
+    width: 150px;
+    height: 100px;
+    position: relative;
+    border: 1px solid #ccc;
+    margin-left: 8px;
+    background: #fffffe;
+    background: linear-gradient(to bottom, #fefefe, #f5f8f1); }
+    .brands-item:first-child {
+      margin-left: 0; }
+  .brands-link {
+    width: 147px;
+    height: 82px;
+    background-image: url('../img/spritesheet.png');
+    background-repeat: no-repeat;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto; }
+    .brands-link_blizzard {
+      background-position: -141px -5px;
+      width: 147px;
+      height: 77px; }
+    .brands-link_ssr {
+      background-position: -325px -73px;
+      width: 131px;
+      height: 82px; }
+    .brands-link_kyivstar {
+      background-position: -158px -157px;
+      width: 89px;
+      height: 82px; }
+    .brands-link_mts {
+      width: 133px;
+      height: 64px;
+      background-position: -5px -249px; }
+    .brands-link_skype {
+      width: 132px;
+      height: 58px;
+      background-position: -324px -5px; }
+    .brands-link_playstation {
+      width: 103px;
+      height: 80px;
+      background-position: -148px -249px; }
+
+/* last bought section */
+.last-bought {
+  background: #73c040;
+  padding: 13px;
+  position: relative;
+  z-index: 1; }
+  .last-bought__logo {
+    width: 60px;
+    height: 55px;
+    background-position: -205px -92px;
+    background-image: url('../img/spritesheet.png');
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: -25px; }
+  .last-bought__text {
+    text-align: center;
+    color: #fff; }
+
+.footer {
+  z-index: 12;
+  background: #666;
+  color: #fff;
+  padding-bottom: 25px; }
+  .footer-fix {
+    padding-bottom: 322px;
+    content: "";
+    display: block; }
+  .footer__text {
+    margin-bottom: 50px; }
+    .footer__text-title {
+      font-size: 22px;
+      font-weight: normal;
+      margin-bottom: 10px; }
+  .footer__info {
+    float: left;
+    margin-left: 45px; }
+    .footer__info:first-child {
+      margin-left: 0; }
+    .footer__info_member {
+      width: 250px; }
+  .footer__list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    margin-left: 35px;
+    float: left; }
+  .footer__item {
+    margin-bottom: 6px; }
+    .footer__item-member {
+      display: inline-block; }
+  .footer__link {
+    display: inline-block;
+    position: relative; }
+    .footer__link:before {
+      content: "";
+      display: inline-block;
+      width: 0;
+      height: 0;
+      border: 4px solid #73c040;
+      border-left-color: transparent;
+      border-bottom-color: transparent;
+      position: absolute;
+      transform: rotate(45deg);
+      left: -18px;
+      bottom: 5px; }
+  .footer__email-link {
+    color: #fff; }
+  .footer__list-member {
+    margin-bottom: 10px; }
+  .footer__copy-social-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 238px;
+    float: left; }
+  .footer__copy-social-item, .footer__copy-social-link {
+    display: inline-block; }
+  .footer__copy-social-link {
+    background-image: url('../img/spritesheet.png');
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    margin-left: 3px; }
+    .footer__copy-social-link_face {
+      background-position: -55px -92px; }
+      .footer__copy-social-link_face:hover {
+        background-position: -5px -92px; }
+    .footer__copy-social-link_twitter {
+      background-position: -108px -142px; }
+      .footer__copy-social-link_twitter:hover {
+        background-position: -55px -144px; }
+    .footer__copy-social-link_vk {
+      background-position: -5px -192px; }
+      .footer__copy-social-link_vk:hover {
+        background-position: -275px -142px; }
+    .footer__copy-social-link_google {
+      background-position: -155px -92px; }
+      .footer__copy-social-link_google:hover {
+        background-position: -105px -92px; }
+    .footer__copy-social-link_mail {
+      background-position: -5px -142px; }
+      .footer__copy-social-link_mail:hover {
+        background-position: -275px -92px; }
+  .footer__copy-copyright {
+    text-align: center;
+    float: right;
+    bottom: 25px; }

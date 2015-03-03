@@ -104,9 +104,13 @@ section.main-content
 						p.main__our-products-phone-text Монитор <br> Samsung SD590
 						span.main__our-products-phones-button В корзину
 			h2.main__title Добро пожаловать на Prydbay
-			p.main__prydbay-p Вы не представляете жизни без мобильной связи? Вам знакома ситуация, когда деньги на счету заканчиваются в самый не подходящий момент? Вы имеете доступ к Интернет? 
-			p.main__prydbay-p Интернет-магазин Prydbay.com создан именно для Вас!
-			h2.main__title Товары со скидкой
+			.main__prydbay-content
+				.main__prydbay-text
+					p.main__prydbay-p Вы не представляете жизни без мобильной связи? Вам знакома ситуация, когда деньги на счету заканчиваются в самый не подходящий момент? Вы имеете доступ к Интернет? 
+					p.main__prydbay-p Интернет-магазин Prydbay.com создан именно для Вас!
+				.main__prydbay-img-wrap
+					img.main__prydbay-img(src="img/pridbay.jpg" alt="#")
+			h2.main__title.main__title_float Товары со скидкой
 			.main__controls
 				span.main__control.main__control-left
 				span.main__control.main__control-right
@@ -121,11 +125,12 @@ section.main-content
 							li.main__our-products-star-item.main__our-products-star-item_active
 							li.main__our-products-star-item.main__our-products-star-item_active
 							li.main__our-products-star-item
-						p.main__our-products-phone-text Galaxy S4 Black Edition
+						p.main__our-products-phone-text Galaxy S4 <br> Black Edition
 						span.main__our-products-phones-button В корзину
 					li.main__our-products-phones-item
-						span.main__our-products-discount -7%
+						
 						a.main__our-products-phones-link
+							span.main__our-products-discount -3%
 							img.main__our-products-phones-img(src="img/phone-2.jpg" alt="phone-2")
 						ul.main__our-products-star-list
 							li.main__our-products-star-item.main__our-products-star-item_active
@@ -133,11 +138,11 @@ section.main-content
 							li.main__our-products-star-item.main__our-products-star-item_active
 							li.main__our-products-star-item.main__our-products-star-item_active
 							li.main__our-products-star-item
-						p.main__our-products-phone-text Galaxy Core Dous (La Fleur)
+						p.main__our-products-phone-text Galaxy Core Dous <br> (La Fleur)
 						span.main__our-products-phones-button В корзину
 					li.main__our-products-phones-item
-						span.main__our-products-discount -7%
 						a.main__our-products-phones-link
+							span.main__our-products-discount -12%
 							img.main__our-products-phones-img(src="img/phone-3.jpg" alt="phone-3")
 						ul.main__our-products-star-list
 							li.main__our-products-star-item.main__our-products-star-item_active
@@ -147,21 +152,4 @@ section.main-content
 							li.main__our-products-star-item
 						p.main__our-products-phone-text Galaxy S5
 						span.main__our-products-phones-button В корзину
-			h2.main__title Брэнды
-			.main__controls
-				span.main__control.main__control-left
-				span.main__control.main__control-right
-			ul.main__brands-list
-				li.main__brands-item
-					a.main__brands-link.main__brands-link_blizzard
-				li.main__brands-item
-					a.main__brands-link.main__brands-link_ssr
-				li.main__brands-item
-					a.main__brands-link.main__brands-link_kyivstar
-				li.main__brands-item
-					a.main__brands-link.main__brands-link_mts
-				li.main__brands-item
-					a.main__brands-link.main__brands-link_skype
-				li.main__brands-item
-					a.main__brands-link.main__brands-link_playstation
 		include _aside.jade

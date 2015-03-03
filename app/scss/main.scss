@@ -364,6 +364,9 @@ body {
 .main {
 	width: 695px;
 	float: left;
+	&-content {
+		margin-bottom: 10px;
+	}
 	&__title {
 		color: #4b4b4b;
 		position: relative;
@@ -371,6 +374,11 @@ body {
 		font-weight: normal;
 		font-size: 32px;
 		margin-bottom: 13px;
+		&_float {
+			float: left;
+			margin: 0;
+			margin-bottom: 30px;
+		}
 		&:before {
 			display: inline-block;
 			content: "";
@@ -468,9 +476,6 @@ body {
 			top: 35px;
 			left: 10px;
 		}
-		&-phones-img-wrap {
-			
-		}
 		&-phones-img {
 			position: absolute;
 			left: 0;
@@ -482,6 +487,7 @@ body {
 		&-star-list {
 			@include list;
 			margin-left: 60px;
+			margin-bottom: 8px;
 			&:after {
 				@extend .clear;
 			}
@@ -502,18 +508,100 @@ body {
 		&-phone-text {
 			text-align: center;
 			color: #575757;
-			height: 33px;
+			height: 42px;
 			text-overflow: ellipsis;
 			overflow: hidden;
 			white-space: nowrap;
+			font-size: 18px;
+			margin-bottom: 10px;
+			margin-top: 0;
 		}
 		&-phones-button {
-			@include buttons(135px, 45px, 0, #8c8c8c);
+			@include buttons(115px, 45px, 0, #8c8c8c);
 			background: linear-gradient(to bottom, #949494, #696969);
+			color: #fff;
+			font-size: 18px;
+			font-weight: normal;
 			&:hover {
 				background: #8dde57;
 				background: linear-gradient(to bottom, #92e45c, #76c343)
 			}
+		}
+		&-discount{
+			background: #d50000;
+			display: inline-block;
+			width: 70px;
+			height: 30px;
+			position: absolute;
+			z-index: 1;
+			left: 10px;
+			color: #fff;
+			padding-top: 15px;
+		}
+	}
+	&__prydbay-content{
+		margin-bottom: 25px;
+		&:after {
+			@extend .clear;
+		}
+	}
+	&__prydbay-text {
+		color: #636363;
+		float: left;
+		width: 350px;
+	}
+	&__prydbay-p {
+		margin-top: 0;
+	}
+	&__prydbay-img-wrap {
+		float: right;
+	}
+	&__controls {
+		float: right;
+	}
+	&__control {
+		width: 45px;
+		height: 45px;
+		background: #89d953;
+		background: linear-gradient(to bottom, #92e35c, #78c645);
+		display: inline-block;
+		margin-left: 10px;
+		cursor: pointer;
+		position: relative;
+		&:hover {
+			background: #f8faf5;
+			background: linear-gradient(to bottom, #fefefe, #f3f7ef);
+			box-shadow: 0 0 5px 1px rgba(0,0,0,0.2);
+		}
+		&:before {
+			position: absolute;
+			width: 0;
+			height: 0;
+			display: block;
+			content: "";
+			border: 10px solid #fff;
+			top: 14px;
+			left: 13px;
+			transform: rotate(45deg);
+		}
+
+		&-left:before {
+			border-right-color: transparent;
+			border-top-color: transparent;
+			left: 17px;
+		}
+		&-right:before {
+			border-left-color: transparent;
+			border-bottom-color: transparent;
+			left: 8px;
+		}
+		&-left:hover:before {
+			border-left-color: #71bc3f;
+			border-bottom-color: #71bc3f;
+		}
+		&-right:hover:before {
+			border-right-color: #71bc3f;
+			border-top-color: #71bc3f;
 		}
 	}
 }
@@ -522,3 +610,218 @@ body {
 	float: right;
 }
 
+
+/* brands */
+.brands {
+	width: 100%;
+	margin-bottom: 50px;
+	&:after {
+		@extend .clear;
+	}
+	&-list {
+		clear: both;
+		@include list;
+	}
+	&-item {
+		float: left;
+		width: 150px;
+		height: 100px;
+		position: relative;
+		border: 1px solid #ccc;
+		margin-left: 8px;
+		background: #fffffe;
+		background: linear-gradient(to bottom, #fefefe, #f5f8f1);
+		&:first-child {
+			margin-left: 0;
+		}
+	}
+	&-link {
+		width: 147px;
+	    height: 82px;
+	    background-image: url('../img/spritesheet.png');
+    	background-repeat: no-repeat;
+    	display: inline-block;
+    	position: absolute;
+    	top: 0;
+    	right: 0;
+    	left: 0;
+    	bottom: 0;
+    	margin: auto;
+    	&_blizzard {
+    		background-position: -141px -5px;
+    		width: 147px;
+   			height: 77px;
+    	}
+    	&_ssr {
+    		background-position: -325px -73px;
+    		width: 131px;
+    		height: 82px;
+    	}
+    	&_kyivstar{
+    		background-position: -158px -157px;
+    		width: 89px;
+    		height: 82px;
+    	}
+    	&_mts{
+    		width: 133px;
+		    height: 64px;
+		    background-position: -5px -249px;
+    	}
+    	&_skype {
+    		width: 132px;
+		    height: 58px;
+		    background-position: -324px -5px;
+    	}
+    	&_playstation {
+    		width: 103px;
+		    height: 80px;
+		    background-position: -148px -249px;
+    	}
+	}
+}
+
+/* last bought section */
+.last-bought {
+	background: #73c040;
+	padding: 13px;
+	position: relative;
+	z-index: 1;
+	&__logo {
+		width: 60px;
+	    height: 55px;
+	    background-position: -205px -92px;
+	    background-image: url('../img/spritesheet.png');
+	    background-repeat: no-repeat;
+	    position: absolute;
+	    bottom: -25px;
+	}
+	&__text {
+		text-align: center;
+		color: #fff;
+	}
+}
+
+.footer {
+	z-index: 12;
+	background: #666;
+	color: #fff;
+	padding-bottom: 25px;
+	&-fix {
+		padding-bottom: 322px;
+		content: "";
+		display: block;
+	}
+	&__text {
+		margin-bottom: 50px;
+		&:after {
+			@extend .clear;
+		}
+		&-title {
+			font-size: 22px;
+			font-weight: normal;
+			margin-bottom: 10px;
+		}
+	}
+	&__info {
+		float: left;
+		margin-left: 45px;
+		&:first-child {
+			margin-left: 0;
+		}
+		&_member {
+			width: 250px;
+		}
+	}
+	&__list {
+		@include list;
+		margin-left: 35px;
+		float: left;
+	}
+	&__item {
+		margin-bottom: 6px;
+		&-member {
+			display: inline-block;
+		}
+	
+	}
+	&__link {
+		display: inline-block;
+		position: relative;
+			&:before {
+			content: "";
+			display: inline-block;
+			width: 0;
+			height: 0;
+			border: 4px solid #73c040;
+			border-left-color: transparent;
+			border-bottom-color: transparent;
+			position: absolute;
+			transform: rotate(45deg);
+			left: -18px;
+			bottom: 5px;
+		}
+	}
+	&__email-link {
+		color: #fff;
+	}
+	&__list-member {
+		margin-bottom: 10px;
+	}
+	&__copy-social {
+		&-list {
+			@include list;
+			width: 238px;
+			float: left;
+			&:after {
+				@extend .clear;
+			}
+		}
+		&-item, &-link{
+			display: inline-block;
+		}
+		&-link {
+			background-image: url('../img/spritesheet.png');
+			background-repeat: no-repeat;
+			width: 40px;
+			height: 40px;
+			border-radius: 8px;
+			margin-left: 3px;
+			&_face {
+				background-position: -55px -92px;
+				&:hover {
+					background-position: -5px -92px;
+				}
+			}
+			&_twitter{
+				background-position: -108px -142px;
+				&:hover {
+					background-position: -55px -144px;
+				}
+			}
+			&_vk{
+				  background-position: -5px -192px;
+
+				&:hover {
+					background-position: -275px -142px;
+				}
+			}
+			&_google{
+				  background-position: -155px -92px;
+				&:hover {
+					background-position: -105px -92px;
+				}
+			}
+			&_mail{
+				  background-position: -5px -142px;
+				&:hover {
+					background-position: -275px -92px;
+				}
+			}
+		}
+	}
+	&__copy-copyright {
+		text-align: center;
+		float: right;
+		bottom: 25px;
+	}
+}
