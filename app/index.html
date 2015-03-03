@@ -3,9 +3,12 @@
   <head>
     <meta charset="utf-8">
     <title>prydbay</title>
-    <!-- bower:css  -->
+    <!-- build:css css/vendor.css-->
+    <!-- bower:css-->
     <link rel="stylesheet" href="bower_components/normalize.css/normalize.css" />
-    <!-- endbower-->
+    <!-- endbower -->
+    <link rel="stylesheet" href="css/jquery.bxslider.css">
+    <!-- endbuild-->
     <!-- build:css css/main.css-->
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <!-- endbuild-->
@@ -70,7 +73,7 @@
     </section>
   </header>
   <section class="slider">
-    <ul class="slider__list">
+    <ul class="slider__list bxslider">
       <li class="slider__item slider__item_first">
         <div class="center-layout">
           <div class="slider__content-img-wrapper"><img src="img/slider-phones.png" alt="slider-img" class="slider__content-img"></div>
@@ -81,7 +84,17 @@
           </div>
         </div>
       </li>
-    </ul><span class="slider__content-button slider__content-button_left"></span><span class="slider__content-button slider__content-button_right"></span>
+      <li class="slider__item slider__item_first">
+        <div class="center-layout">
+          <div class="slider__content-img-wrapper"><img src="img/slider-phones.png" alt="slider-img" class="slider__content-img"></div>
+          <div class="slider__text">
+            <div class="slider__text-first">Samsung</div>
+            <div class="slider__text-second">Galaxy s5</div>
+            <div class="slider__text-third">устойчив к дождю, жидкостям, песку и пыли</div>
+          </div>
+        </div>
+      </li>
+    </ul>
   </section>
   <section class="main-content">
     <main class="main">
@@ -282,8 +295,9 @@
   <!-- bower:js-->
   <script src="bower_components/jquery/dist/jquery.js"></script>
   <!-- endbower-->
+  <script src="js/jquery.bxslider.js"></script>
   <!-- endbuild-->
   <!-- build:js js/main.js-->
-  <script src="../js/main.js"></script>
-  <!-- endbuild-->
+  <script src="js/main.js"></script>
+  <!-- endbuild -->
 </html>
