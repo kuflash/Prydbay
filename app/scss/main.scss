@@ -369,11 +369,14 @@ body {
 		position: relative;
 		padding-left: 20px;
 		font-weight: normal;
+		font-size: 32px;
+		margin-bottom: 13px;
 		&:before {
 			display: inline-block;
 			content: "";
 			position: absolute;
 			left: 0;
+			top: 5px;
 			width: 12px;
 		    height: 26px;
 		    background-image: url('../img/spritesheet.png');
@@ -386,6 +389,7 @@ body {
 		&-nav-list {
 			@include list;
 			@extend .clear;
+			margin-bottom: 20px;
 		}
 		&-nav-item {
 			float: left;
@@ -408,9 +412,103 @@ body {
 
 			}
 		}
+		&-phones {
+			&-list {
+				@include list;
+				@extend .clear;
+			}
+			&-item {
+				float: left;
+				width: 225px;
+				padding-top: 5px;
+				min-height: 336px;
+				margin-left: 6px;
+				margin-bottom: 25px;
+				text-align: center;
+				padding-bottom: 25px;
+				transition: 0.3s;
+				&:first-child {
+					margin-left: 0;
+				}
+				&:hover {
+					box-shadow: 0 0 5px 1px rgba(0,0,0, 0.5);
+				}
+			}
+			&-link {
+				width: 225px;
+				height: 237px;
+				display: block;
+				position: relative;
+				margin-bottom: 7px;
+			}
+		}
+		&-discount-price {
+			position: absolute;
+			background: #73c040;
+			text-align: center;
+			width: 82px;
+			height: 82px;
+			border-radius: 50%;
+			bottom: -8px;
+			right: 12px;
+		}
+		&-phones-old, &-phones-new {
+			display: inline-block;
+			position: absolute;
+		}
+		&-phones-old {
+			text-decoration: line-through;
+			left: 15px;
+			top: 18px;
+			color: #676c63;
+			font-size: 12px;
+		}
+		&-phones-new {
+			color: #fff;
+			top: 35px;
+			left: 10px;
+		}
+		&-phones-img-wrap {
+			margin-left: 7px;
+		}
+		&-star-list {
+			@include list;
+			margin-left: 60px;
+			&:after {
+				@extend .clear;
+			}
+		}
+		&-star-item {
+		 	width: 16px;
+		    height: 15px;
+		    background-position: -325px -165px;
+		    background-image: url(spritesheet.png);
+    		background-repeat: no-repeat;
+    		float: left;
+    		margin-left: 4px;
+    		cursor: pointer;
+    		&_active {
+    			background-position: -351px -165px;
+    		}
+		}
+		&-phone-text {
+			text-align: center;
+			color: #575757;
+			height: 33px;
+			text-overflow: ellipsis;
+			overflow: hidden;
+		}
+		&-phones-button {
+			@include buttons(135px, 45px, 0, #8c8c8c);
+			background: linear-gradient(to bottom, #949494, #696969);
+			&:hover {
+				background: #8dde57;
+				background: linear-gradient(to bottom, #92e45c, #76c343)
+			}
+		}
 	}
 }
-.sidebar {
+.aside {
 	width: 250px;
 	float: right;
 }
