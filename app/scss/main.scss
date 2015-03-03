@@ -699,7 +699,7 @@ body {
 	&__first {
 		border: 1px solid #ccc;
 		text-align: center;
-		padding: 10px 15px 15px;
+		padding: 10px 15px 21px;
 		margin-bottom: 25px;
 		&-title {
 			text-transform: uppercase;
@@ -709,7 +709,7 @@ body {
 		}
 		&-text {
 			color: #666;
-			margin-bottom: 10px;
+			margin-bottom: 14px;
 			&:first-child {
 				margin-bottom: 15px;
 			}
@@ -722,7 +722,7 @@ body {
 			text-align: center;
 			@include place(#cfcfcf);
 			color: #666;
-			margin-bottom: 12px;
+			margin-bottom: 16px;
 			&:focus {
 				outline: none;
 			}
@@ -730,6 +730,7 @@ body {
 		&-submit {
 			@include buttons(100%, 45px, 0, #82d14e);
 			color: #fff;
+			font-size: 18px;
 			background: linear-gradient(to bottom, #92e35c, #77c544);
 			&:hover {
 				background: linear-gradient(to bottom, #77c544, #92e35c);
@@ -754,13 +755,16 @@ body {
 			font-weight: bold;
 			color: #575757;
 			margin-bottom: 10px;
+			font-weight: normal;
+			font-size: 16px;
 		}
 		&-img-text {
 			color: #909090;
-			margin-bottom: 10px;
+			margin-bottom: 20px;
 		}
 		&-info {
 			margin-bottom: 25px;
+			font-size: 16px;
 			&:after {
 				@extend .clear;
 			}
@@ -792,13 +796,12 @@ body {
 			margin: 0;
 			font-size: 22px;
 			color: #4b4b4b;
-			margin-bottom: 8px;
 			&_on {
 				font-size: 18px;
 			}
 			&_small {
 				font-size: 17px;
-				line-height: 28px;
+				line-height: 29px;
 			}
 		}
 		&-link {
@@ -822,8 +825,8 @@ body {
 			}
 		}
 		&-dots-link {
-			width: 10px;
-			height: 10px;
+			width: 7px;
+			height: 7px;
 			background: #666;
 			border-radius: 50%;
 			display: block;
@@ -840,7 +843,13 @@ body {
 	}
 	span.large {
 		text-transform: uppercase;
-		font-size: 24px;
+		font-size: 22px;
+		letter-spacing: 3px;
+		margin-top: 17px;
+		display: inline-block;
+	}
+	span.middle {
+		font-size: 22px;
 	}
 }
 

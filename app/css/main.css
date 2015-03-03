@@ -651,7 +651,7 @@ body {
   .aside__first {
     border: 1px solid #ccc;
     text-align: center;
-    padding: 10px 15px 15px;
+    padding: 10px 15px 21px;
     margin-bottom: 25px; }
     .aside__first-title {
       text-transform: uppercase;
@@ -660,7 +660,7 @@ body {
       margin-bottom: 15px; }
     .aside__first-text {
       color: #666;
-      margin-bottom: 10px; }
+      margin-bottom: 14px; }
       .aside__first-text:first-child {
         margin-bottom: 15px; }
     .aside__first-email {
@@ -670,7 +670,7 @@ body {
       color: #cfcfcf;
       text-align: center;
       color: #666;
-      margin-bottom: 12px; }
+      margin-bottom: 16px; }
       .aside__first-email::-webkit-input-placeholder {
         color: #cfcfcf; }
       .aside__first-email::-moz-input-placeholder {
@@ -696,6 +696,7 @@ body {
       cursor: pointer;
       transition: .3s;
       color: #fff;
+      font-size: 18px;
       background: linear-gradient(to bottom, #92e35c, #77c544); }
       .aside__first-submit:hover {
         background: #74cc3a; }
@@ -715,12 +716,15 @@ body {
   .aside__news-img-title {
     font-weight: bold;
     color: #575757;
-    margin-bottom: 10px; }
+    margin-bottom: 10px;
+    font-weight: normal;
+    font-size: 16px; }
   .aside__news-img-text {
     color: #909090;
-    margin-bottom: 10px; }
+    margin-bottom: 20px; }
   .aside__news-info {
-    margin-bottom: 25px; }
+    margin-bottom: 25px;
+    font-size: 16px; }
   .aside__news-more {
     float: left;
     color: #73c040; }
@@ -743,13 +747,12 @@ body {
     .aside__weekends-text {
       margin: 0;
       font-size: 22px;
-      color: #4b4b4b;
-      margin-bottom: 8px; }
+      color: #4b4b4b; }
       .aside__weekends-text_on {
         font-size: 18px; }
       .aside__weekends-text_small {
         font-size: 17px;
-        line-height: 28px; }
+        line-height: 29px; }
     .aside__weekends-link {
       display: block; }
       .aside__weekends-link:hover {
@@ -765,8 +768,8 @@ body {
       .aside__weekends-dots-item:first-child {
         margin-left: 0; }
     .aside__weekends-dots-link {
-      width: 10px;
-      height: 10px;
+      width: 7px;
+      height: 7px;
       background: #666;
       border-radius: 50%;
       display: block; }
@@ -778,7 +781,12 @@ body {
     font-size: 30px; }
   .aside span.large {
     text-transform: uppercase;
-    font-size: 24px; }
+    font-size: 22px;
+    letter-spacing: 3px;
+    margin-top: 17px;
+    display: inline-block; }
+  .aside span.middle {
+    font-size: 22px; }
 
 /* brands */
 .brands {
