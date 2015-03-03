@@ -280,17 +280,17 @@ body {
 			min-width: 245px;
 		}
 		&-input {
-			padding: 13px 5px 13px;
+			padding: 13px 5px 12px;
 			border: 0;
 			color: #4b4b4b;
-			min-width: 206px;
+			min-width: 194px;
 			&:focus {
 				outline: 0;
 			}
 		}
 		&-submit, .fake-submit {
 			width: 41px;
-			height: 43px;
+			height: 42px;
 			position: absolute;
 			right: 0;
 			top: 0;	
@@ -319,6 +319,10 @@ body {
 		color: #fff;
 		padding-left: 50px;
 		cursor: pointer;
+		transition: 0.3s;
+		&:hover {
+			background-color: lighten(#8dd95a, 7%);
+		}
 	}
 }
 
@@ -583,6 +587,7 @@ body {
 			top: 14px;
 			left: 13px;
 			transform: rotate(45deg);
+			border-radius: 4px;
 		}
 
 		&-left:before {
@@ -603,11 +608,173 @@ body {
 			border-right-color: #71bc3f;
 			border-top-color: #71bc3f;
 		}
+		&_small {
+			width: 30px;
+			height: 30px;
+			&:before {
+				border-width: 6px;	
+			}
+			&.main__control-left:before {
+				left: 13px;
+				top: 10px;
+			}
+			&.main__control-right:before {
+				left: 7px;
+				top: 10px;
+			}
+		}
 	}
 }
 .aside {
+	margin-top: 35px;
 	width: 250px;
 	float: right;
+	&__first {
+		border: 1px solid #ccc;
+		text-align: center;
+		padding: 10px 15px 15px;
+		margin-bottom: 25px;
+		&-title {
+			text-transform: uppercase;
+			font-size: 25px;
+			color: #4b4b4b;
+			margin-bottom: 15px;
+		}
+		&-text {
+			color: #666;
+			margin-bottom: 10px;
+			&:first-child {
+				margin-bottom: 15px;
+			}
+		}
+		&-email {
+			width: 100%;
+			box-sizing: border-box;
+			padding: 12px 5px;
+			color: #cfcfcf;
+			text-align: center;
+			@include place(#cfcfcf);
+			color: #666;
+			margin-bottom: 12px;
+			&:focus {
+				outline: none;
+			}
+		}
+		&-submit {
+			@include buttons(100%, 45px, 0, #82d14e);
+			color: #fff;
+			background: linear-gradient(to bottom, #92e35c, #77c544);
+			&:hover {
+				background: linear-gradient(to bottom, #77c544, #92e35c);
+			}
+		}
+	}
+	&__news {
+		&:after {
+			@extend .clear;
+		}
+		&-title {
+			text-transform: uppercase;
+			font-size: 25px;
+			color: #4b4b4b;
+			float: left;
+			margin-bottom: 20px;
+		}
+		&-img-wrap {
+			margin-bottom: 10px;
+		}
+		&-img-title {
+			font-weight: bold;
+			color: #575757;
+			margin-bottom: 10px;
+		}
+		&-img-text {
+			color: #909090;
+			margin-bottom: 10px;
+		}
+		&-info {
+			margin-bottom: 25px;
+			&:after {
+				@extend .clear;
+			}
+		}
+		&-more {
+			float: left;
+			color: #73c040;
+		}
+		&-date {
+			float: right;
+			color: #666;
+		}
+
+	}
+	&__weekends{
+		border: 1px solid #ccc;
+		text-align: center;
+		background: #fafbf8;
+		background: linear-gradient(to bottom, #fdfefd, #f3f6ee);
+		padding: 5px 10px 10px;
+		transition: 0.3s;
+		&:hover {
+			background: linear-gradient(to bottom, #f3f6ee, #fdfefd);
+		}
+		&-list {
+			@include list;
+		}
+		&-text {
+			margin: 0;
+			font-size: 22px;
+			color: #4b4b4b;
+			margin-bottom: 8px;
+			&_on {
+				font-size: 18px;
+			}
+			&_small {
+				font-size: 17px;
+				line-height: 28px;
+			}
+		}
+		&-link {
+			display: block;
+			&:hover {
+				text-decoration: none;
+			}
+		}
+		&-dots-list {
+			@include list;
+			display: inline-block;
+			&:after {
+				@extend .clear;
+			}	
+		}
+		&-dots-item {
+			float: left;
+			margin-left: 5px;
+			&:first-child {
+				margin-left: 0;
+			}
+		}
+		&-dots-link {
+			width: 10px;
+			height: 10px;
+			background: #666;
+			border-radius: 50%;
+			display: block;
+			&_active {
+				background: #76c144;
+			}
+		}
+	}
+	.green {
+		color: #73c040;
+	}
+	span.prydbay {
+		font-size: 30px;
+	}
+	span.large {
+		text-transform: uppercase;
+		font-size: 24px;
+	}
 }
 
 
@@ -707,7 +874,7 @@ body {
 	color: #fff;
 	padding-bottom: 25px;
 	&-fix {
-		padding-bottom: 322px;
+		padding-bottom: 314px;
 		content: "";
 		display: block;
 	}
@@ -783,7 +950,7 @@ body {
 			background-image: url('../img/spritesheet.png');
 			background-repeat: no-repeat;
 			width: 40px;
-			height: 40px;
+			height: 41px;
 			border-radius: 8px;
 			margin-left: 3px;
 			&_face {
@@ -795,7 +962,7 @@ body {
 			&_twitter{
 				background-position: -108px -142px;
 				&:hover {
-					background-position: -55px -144px;
+					background-position: -55px -145px;
 				}
 			}
 			&_vk{

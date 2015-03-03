@@ -19,6 +19,9 @@
 .text-center { 
 	text-align: center;
 }
+.bold {
+	font-weight: bold;
+}
 
 
 /* for press footer*/
@@ -85,4 +88,20 @@ a:hover {
 	list-style-type: none;
 	padding: $padd;
 	margin: $marg;
+}
+
+/* placeholder */
+@mixin place ($color) {
+	&::-webkit-input-placeholder {
+  		color: $color;
+	}
+	&::-moz-input-placeholder {
+		color: $color;
+	}
+	&::-ms-input-placeholder {
+		color: $color;
+	}
+	&::input-placeholder {
+		color: $color;
+	}
 }

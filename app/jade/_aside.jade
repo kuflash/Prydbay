@@ -4,13 +4,13 @@ aside.aside
 		.aside__first-text Получить всю последнюю информацию о событиях, продажах и предложениях.
 		.aside__first-text Подпишитесь на нашу рассылку сегодня.
 		.aside__first-form
-			input(type="email" placeholder="Ваш Email")
-			input(type="submit" value="Подписаться")
+			input.aside__first-email(type="email" placeholder="Ваш Email")
+			input.aside__first-submit(type="submit" value="Подписаться")
 	article.aside__news
 		.aside__news-title Новости
 		.main__controls
-			span.main__control.main__control-left
-			span.main__control.main__control-right
+			span.main__control.main__control_small.main__control-left
+			span.main__control.main__control_small.main__control-right
 		.aside__news-img-wrap
 			img.aside__news-img(src="img/sidebar-slider-img-1.jpg" alt="img")
 		.aside__news-img-title Новая скидка в рамках акции выходного дня!
@@ -24,15 +24,18 @@ aside.aside
 		.aside__news-img-text  В рамках акции на этих выходных у вас будет потрясающая возможность купить русскую версию DIABLO III по...
 		.aside__news-info
 			.aside__news-more Подробнее...
-			.aside__news-date 30.05.2014
+			.aside__news-date 30.05.2014 
 	article.aside__weekends
-		p.aside__weekends-text  Горячие выходные на <span class="bold">Prydbay.<span class="green">com</span></span>
-		p.aside__weekends-text Каждую неделю с 18:00 пятницы до 9:00 понедельника популярные товары по  сниженным ценам.
-		ul.aside__weekends-dots-list
-			li.aside__weekends-dots-list
-				a.aside__weekends-dots-list
-			li.aside__weekends-dots-list
-				a.aside__weekends-dots-list.aside__weekends-dots-list_active
-			li.aside__weekends-dots-list
-				a.aside__weekends-dots-list
+		ul.aside__weekends-list
+			li.aside__weekends-item
+				a(href="#").aside__weekends-link
+					p.aside__weekends-text  Горячие выходные <span class="aside__weekends-text_on">на<br></span> <span class="bold prydbay">Prydbay.<span class="green">com</span></span>
+					p.aside__weekends-text.aside__weekends-text_small <span class="bold">Каждую неделю </span> <br>с 18:00 <span class="bold">пятницы</span> до 9:00 <span class="bold">понедельника</span> <span class="bold">популярные</span> товары по  <span class="green bold large">сниженным </span> <span class="bold large">ценам.</span>
+					ul.aside__weekends-dots-list
+						li.aside__weekends-dots-item
+							a.aside__weekends-dots-link
+						li.aside__weekends-dots-item
+							a.aside__weekends-dots-link.aside__weekends-dots-link_active
+						li.aside__weekends-dots-item
+							a.aside__weekends-dots-link
 		
