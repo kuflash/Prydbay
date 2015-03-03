@@ -291,10 +291,10 @@ body {
     .header__info .fake-submit {
       cursor: pointer;
       z-index: 1;
-      background: #8dd95a url(../img/spritesheet.png) -8px 84px;
-      background: url(../img/spritesheet.png) -8px 84px, linear-gradient(to bottom, #8dd95a, #75c242); }
+      background: #8dd95a url(../img/spritesheet.png) -1px 84px;
+      background: url(../img/spritesheet.png) -1px 84px, linear-gradient(to bottom, #8dd95a, #75c242); }
   .header__price {
-    background: #8dd95a url(../img/spritesheet.png) -6px 54px;
+    background: #8dd95a url(../img/spritesheet.png) 0px 51px;
     float: left;
     width: 130px;
     margin-left: 10px;
