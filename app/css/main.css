@@ -4,7 +4,7 @@
 .show {
   display: block; }
 
-.clear, .center-layout:after, .header__nav:after, .header__list-profile:after, .header__list-enter:after, .header__contakts:after, .header__menu-list:after, .header__info:after {
+.clear, .center-layout:after, .header__nav:after, .header__list-profile:after, .header__list-enter:after, .header__contakts:after, .header__menu-list:after, .header__info:after, .main__our-products-nav-list {
   display: table;
   content: "";
   height: 0;
@@ -324,3 +324,65 @@ body {
 
 .bx-viewport {
   width: auto !important; }
+
+/* our products block */
+.main {
+  width: 695px;
+  float: left;
+  /* menu */ }
+  .main__title {
+    color: #4b4b4b;
+    position: relative;
+    padding-left: 20px;
+    font-weight: normal; }
+    .main__title:before {
+      display: inline-block;
+      content: "";
+      position: absolute;
+      left: 0;
+      width: 12px;
+      height: 26px;
+      background-image: url('../img/spritesheet.png');
+      background-repeat: no-repeat;
+      background-position: -378px -165px; }
+  .main__our-products-nav-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0; }
+  .main__our-products-nav-item {
+    float: left;
+    margin-left: 10px; }
+    .main__our-products-nav-item:first-child {
+      margin-left: 0; }
+  .main__our-products-nav-link {
+    width: auto;
+    height: 45px;
+    line-height: 45px;
+    border-radius: 0;
+    background: #898989;
+    display: inline-block;
+    padding: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 0;
+    text-align: center;
+    cursor: pointer;
+    transition: .3s;
+    color: #fff;
+    background: linear-gradient(to bottom, #898989, #6a6a6a);
+    font-size: 18px;
+    padding-left: 20px;
+    padding-right: 20px; }
+    .main__our-products-nav-link:hover {
+      background: #7c7c7c; }
+    .main__our-products-nav-link:before {
+      content: "";
+      display: inline-block; }
+    .main__our-products-nav-link:hover {
+      text-decoration: none;
+      background: #83d24e;
+      background: linear-gradient(to bottom, #83d24e, #75c242); }
+
+.sidebar {
+  width: 250px;
+  float: right; }

@@ -359,3 +359,59 @@ body {
 .bx-viewport {
 	width: auto!important;
 }
+
+/* our products block */
+.main {
+	width: 695px;
+	float: left;
+	&__title {
+		color: #4b4b4b;
+		position: relative;
+		padding-left: 20px;
+		font-weight: normal;
+		&:before {
+			display: inline-block;
+			content: "";
+			position: absolute;
+			left: 0;
+			width: 12px;
+		    height: 26px;
+		    background-image: url('../img/spritesheet.png');
+   			background-repeat: no-repeat;
+		    background-position: -378px -165px;
+		}
+	}
+	/* menu */
+	&__our-products {
+		&-nav-list {
+			@include list;
+			@extend .clear;
+		}
+		&-nav-item {
+			float: left;
+			margin-left: 10px;
+			&:first-child {
+				margin-left: 0;
+			}
+		}
+		&-nav-link {
+			@include buttons(auto, 45px, 0, #898989);
+			color: #fff;
+			background: linear-gradient(to bottom, #898989, #6a6a6a);
+			font-size: 18px;
+			padding-left: 20px;
+			padding-right: 20px;
+			&:hover {
+				text-decoration: none;
+				background: #83d24e;
+				background: linear-gradient(to bottom, #83d24e, #75c242);
+
+			}
+		}
+	}
+}
+.sidebar {
+	width: 250px;
+	float: right;
+}
+
