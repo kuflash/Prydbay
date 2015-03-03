@@ -60,6 +60,7 @@ body {
 
 .header {
   border-top: 5px solid #73c040;
+  margin-bottom: 14px;
   /* header left menu */
   /* header right menu*/
   /* header logo section */
@@ -290,4 +291,30 @@ body {
     margin-left: 10px;
     padding: 13px 5px;
     color: #fff;
-    padding-left: 50px; }
+    padding-left: 50px;
+    cursor: pointer; }
+
+/* slider block */
+.slider__list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0; }
+.slider__item {
+  padding: 25px 0 10px; }
+  .slider__item_first {
+    background: url('../img/slider-img-1.jpg') no-repeat; }
+.slider__content-img-wrapper {
+  float: left; }
+.slider__text {
+  float: left;
+  margin-left: 90px;
+  margin-top: 15px;
+  color: #4b4b4b; }
+  .slider__text-first {
+    font-size: 45px; }
+  .slider__text-second {
+    font-size: 70px;
+    text-transform: uppercase;
+    margin-bottom: 20px; }
+  .slider__text-third {
+    font-size: 17px; }

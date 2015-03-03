@@ -16,6 +16,7 @@ body {
 }
 .header {
 	border-top: 5px solid #73c040;
+	margin-bottom: 14px;
 	/* header left menu */
 	&__nav {
 		background: #fdfefc;
@@ -317,5 +318,40 @@ body {
 		padding: 13px 5px;
 		color: #fff;
 		padding-left: 50px;
+		cursor: pointer;
+	}
+}
+
+/* slider block */
+.slider{
+	
+	&__list {
+		@include list;
+	}
+	&__item {
+		padding: 25px 0 10px;
+		&_first {
+			background: url('../img/slider-img-1.jpg') no-repeat;
+		}
+	}
+	&__content-img-wrapper {
+		float: left;
+	}
+	&__text {
+		float: left;
+		margin-left: 90px;
+		margin-top: 15px;
+		color: #4b4b4b;
+		&-first {
+			font-size: 45px;
+		}
+		&-second {
+			font-size: 70px;
+			text-transform: uppercase;
+			margin-bottom: 20px;
+		}
+		&-third {
+			font-size: 17px;
+		}
 	}
 }
