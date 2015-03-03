@@ -439,7 +439,7 @@ body {
 				height: 237px;
 				display: block;
 				position: relative;
-				margin-bottom: 7px;
+				margin-bottom: 10px;
 			}
 		}
 		&-discount-price {
@@ -469,7 +469,15 @@ body {
 			left: 10px;
 		}
 		&-phones-img-wrap {
-			margin-left: 7px;
+			
+		}
+		&-phones-img {
+			position: absolute;
+			left: 0;
+			right: 0;
+			top: 0;
+			bottom: 0;
+			margin: auto;
 		}
 		&-star-list {
 			@include list;
@@ -497,6 +505,7 @@ body {
 			height: 33px;
 			text-overflow: ellipsis;
 			overflow: hidden;
+			white-space: nowrap;
 		}
 		&-phones-button {
 			@include buttons(135px, 45px, 0, #8c8c8c);
