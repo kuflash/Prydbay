@@ -270,6 +270,7 @@ body {
 	&__info {
 		float: right;
 		min-width: 442px;
+		position: relative;
 		&:after {
 			@extend .clear;
 		}
@@ -306,12 +307,12 @@ body {
 		.fake-submit {
 			cursor: pointer;
 			z-index: 1;
-			background: #8dd95a url(../img/spritesheet.png) 218px 142px;
-			background: url(../img/spritesheet.png) 218px 142px, linear-gradient(to bottom, #8dd95a, #75c242);
+			background: #8dd95a url(../img/spritesheet.png) -8px 84px;
+			background: url(../img/spritesheet.png) -8px 84px, linear-gradient(to bottom, #8dd95a, #75c242);
 		}
 	}
 	&__price {
-		background: #8dd95a url(../img/spritesheet.png) 218px 106px;
+		background: #8dd95a url(../img/spritesheet.png) -6px 54px;
 		float: left;
 		width: 130px;
 		margin-left: 10px;
@@ -322,6 +323,72 @@ body {
 		transition: 0.3s;
 		&:hover {
 			background-color: lighten(#8dd95a, 7%);
+		}
+	}
+
+	/* appear block with phone*/
+	.header__buy {
+		background: #fff;
+		border-top: 5px solid #73c040;
+		position: absolute;
+		z-index: 10000;
+		top: 50px;
+		right: 0;
+		width: 300px;
+		&-img-wrap {
+			float: left;
+			margin-top: 5px;
+		}
+		&-text {
+			float: left;
+			font-size: 18px;
+			color: #555;
+			line-height: 25px;
+
+		}
+		&-title {
+			margin-top: 12px;
+			margin-bottom: 8px;
+		}
+		&-price {	
+			&_sum {
+				float: none;
+			}
+			&_sum {
+				clear: both;
+				text-align: center;
+				color: #555;
+				font-size: 18px;
+				margin-bottom: 15px;
+			}
+			&-red {
+				color: #bb0000;
+			}
+			
+		}
+		&-button {
+			padding-bottom: 20px;
+			&:after {
+				@extend .clear;
+			}
+		}
+		&-buttons {
+			@include buttons(105px, 45px, 0, #929292);
+			color: #fff;
+			font-size: 18px;
+			float: left;
+			background: linear-gradient(to bottom, #898989, #6a6a6a);
+			&:hover {
+				background: #8cdd56;
+				background: linear-gradient(to bottom, #92e45c, #75c342);
+			}
+			&_basket {
+				margin-left: 18px;
+			}
+			&_buy {
+				float: right;
+				margin-right: 18px;
+			}
 		}
 	}
 }
@@ -798,9 +865,22 @@ body {
 		margin-left: 8px;
 		background: #fffffe;
 		background: linear-gradient(to bottom, #fefefe, #f5f8f1);
+		cursor: pointer;
 		&:first-child {
 			margin-left: 0;
 		}
+		&:hover {
+			box-shadow: 0 0 15px 1px rgba(0,0,0,0.4);
+    		.brands-link_mts{
+    			background-position: -4px -249px;
+    		}
+    		.brands-link_playstation{
+    			background-position: -378px -212px;
+    		}
+    		.brands-link_kyivstar{
+    			background-position: -251px -318px;
+    		}
+    	}
 	}
 	&-link {
 		width: 147px;
@@ -832,7 +912,7 @@ body {
     	&_mts{
     		width: 133px;
 		    height: 64px;
-		    background-position: -5px -249px;
+		    background-position: -342px -306px;
     	}
     	&_skype {
     		width: 132px;
@@ -842,7 +922,7 @@ body {
     	&_playstation {
     		width: 103px;
 		    height: 80px;
-		    background-position: -148px -249px;
+		    background-position: -143px -245px;
     	}
 	}
 }
@@ -992,3 +1072,14 @@ body {
 		bottom: 25px;
 	}
 }
+.tripple-line {
+		float: left;
+		width: 235px;
+		margin-top: 18px;
+		margin-left: 10px;
+		height: 12px;
+		background: linear-gradient(to bottom, #ccc 2px, #fff 2px, #fff 4px, #ccc 4px, #ccc 8px, #fff 8px, #fff 10px, #ccc 10px );
+		&_brands {
+			width: 690px;
+		}
+	}
