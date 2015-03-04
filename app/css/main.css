@@ -4,7 +4,7 @@
 .show {
   display: block; }
 
-.clear, .center-layout:after, .header__nav:after, .header__list-profile:after, .header__list-enter:after, .header__contakts:after, .header__menu-list:after, .header__info:after, .header .header__buy-button:after, .main__our-products-nav-list, .main__our-products-phones-list, .main__our-products-star-list:after, .main__prydbay-content:after, .aside__news:after, .aside__news-info:after, .aside__weekends-dots-list:after, .brands:after, .footer__text:after, .footer__copy-social-list:after {
+.clear, .center-layout:after, .header__nav:after, .header__list-profile:after, .header__list-enter:after, .header__contakts:after, .header__menu-list:after, .header__info:after, .header .header__buy-button:after, .main__our-products-nav-list, .main__our-products-phones-list, .main__our-products-star-list:after, .main__prydbay-content:after, .aside:after, .aside__news:after, .aside__news-info:after, .aside__weekends-dots-list:after, .brands:after, .brands-list:after, .footer__text:after, .footer__copy-social-list:after {
   display: table;
   content: "";
   height: 0;
@@ -491,27 +491,52 @@ body {
       background: url('../img/slider-img-1.jpg') no-repeat; }
   .slider__content-img-wrapper {
     float: left; }
-  .slider__content-img {
-    width: 80%; }
+    @media screen and (max-width: 900px) {
+      .slider__content-img-wrapper {
+        width: 230px !important; } }
   .slider__text {
     float: left;
     margin-left: 90px;
     margin-top: 15px;
     color: #4b4b4b; }
+    @media screen and (max-width: 900px) {
+      .slider__text {
+        margin-left: 0;
+        float: right; } }
     .slider__text-first {
       font-size: 45px; }
+      @media screen and (max-width: 900px) {
+        .slider__text-first {
+          font-size: 35px; } }
+      @media screen and (max-width: 665px) {
+        .slider__text-first {
+          font-size: 26px; } }
     .slider__text-second {
       font-size: 70px;
       text-transform: uppercase;
       margin-bottom: 20px; }
+      @media screen and (max-width: 900px) {
+        .slider__text-second {
+          font-size: 50px; } }
+      @media screen and (max-width: 665px) {
+        .slider__text-second {
+          font-size: 35px; } }
     .slider__text-third {
       font-size: 17px; }
+      @media screen and (max-width: 665px) {
+        .slider__text-third {
+          font-size: 14px; } }
 
 /* our products block */
 .main {
   width: 695px;
   float: left;
   /* menu */ }
+  @media screen and (max-width: 985px) {
+    .main {
+      width: 710px;
+      margin: 0 auto;
+      float: none; } }
   .main-content {
     margin-bottom: 10px; }
   .main__title {
@@ -570,6 +595,12 @@ body {
     .main__our-products-nav-link:before {
       content: "";
       display: inline-block; }
+    @media screen and (max-width: 700px) {
+      .main__our-products-nav-link {
+        font-size: 14px;
+        line-height: 16px;
+        padding-top: 10px;
+        height: 25px; } }
     .main__our-products-nav-link:hover {
       text-decoration: none;
       background: #83d24e;
@@ -578,8 +609,11 @@ body {
     list-style-type: none;
     padding: 0;
     margin: 0; }
+    @media screen and (max-width: 985px) {
+      .main__our-products-phones-list {
+        text-align: center; } }
   .main__our-products-phones-item {
-    float: left;
+    display: inline-block;
     width: 225px;
     padding-top: 5px;
     min-height: 336px;
@@ -588,6 +622,9 @@ body {
     text-align: center;
     padding-bottom: 25px;
     transition: 0.3s; }
+    @media screen and (max-width: 985px) {
+      .main__our-products-phones-item {
+        width: 230px; } }
     .main__our-products-phones-item:first-child {
       margin-left: 0; }
     .main__our-products-phones-item:hover {
@@ -627,6 +664,9 @@ body {
     top: 0;
     bottom: 0;
     margin: auto; }
+    @media screen and (max-width: 700px) {
+      .main__our-products-phones-img {
+        width: 160px; } }
   .main__our-products-star-list {
     list-style-type: none;
     padding: 0;
@@ -700,6 +740,14 @@ body {
     margin-top: 0; }
   .main__prydbay-img-wrap {
     float: right; }
+    @media screen and (max-width: 985px) {
+      .main__prydbay-img-wrap {
+        width: 230px; } }
+  .main__prydbay-img {
+    float: right; }
+    @media screen and (max-width: 985px) {
+      .main__prydbay-img {
+        width: 230px; } }
   .main__controls {
     float: right; }
   .main__control {
@@ -756,11 +804,22 @@ body {
   margin-top: 35px;
   width: 250px;
   float: right; }
+  @media screen and (max-width: 986px) {
+    .aside {
+      float: none;
+      width: 100%;
+      text-align: center;
+      vertical-align: top; } }
   .aside__first {
     border: 1px solid #ccc;
     text-align: center;
     padding: 10px 15px 21px;
     margin-bottom: 25px; }
+    @media screen and (max-width: 986px) {
+      .aside__first {
+        display: inline-block;
+        width: 250px;
+        vertical-align: top; } }
     .aside__first-title {
       text-transform: uppercase;
       font-size: 25px;
@@ -813,6 +872,17 @@ body {
         display: inline-block; }
       .aside__first-submit:hover {
         background: linear-gradient(to bottom, #77c544, #92e35c); }
+  @media screen and (max-width: 986px) {
+    .aside__news {
+      display: inline-block;
+      width: 570px;
+      vertical-align: top; } }
+  @media screen and (max-width: 986px) {
+    .aside__news__block {
+      display: inline-block;
+      width: 250px;
+      margin-left: 15px;
+      vertical-align: top; } }
   .aside__news-title {
     text-transform: uppercase;
     font-size: 25px;
@@ -846,6 +916,12 @@ body {
     background: linear-gradient(to bottom, #fdfefd, #f3f6ee);
     padding: 5px 10px 10px;
     transition: 0.3s; }
+    @media screen and (max-width: 986px) {
+      .aside__weekends {
+        display: inline-block;
+        width: 250px;
+        margin-left: 15px;
+        vertical-align: top; } }
     .aside__weekends:hover {
       background: linear-gradient(to bottom, #f3f6ee, #fdfefd); }
     .aside__weekends-list {
@@ -905,6 +981,12 @@ body {
     list-style-type: none;
     padding: 0;
     margin: 0; }
+    @media screen and (max-width: 985px) {
+      .brands-list {
+        width: 500px;
+        margin: 0 auto; } }
+  .brands .main__title, .brands .main__controls {
+    display: inline-block; }
   .brands-item {
     float: left;
     width: 150px;
@@ -917,6 +999,11 @@ body {
     cursor: pointer; }
     .brands-item:first-child {
       margin-left: 0; }
+    @media screen and (max-width: 985px) {
+      .brands-item {
+        margin-bottom: 10px; }
+        .brands-item:first-child {
+          margin-left: 8px; } }
     .brands-item:hover {
       box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4); }
       .brands-item:hover .brands-link_mts {
@@ -1080,3 +1167,6 @@ body {
   background: linear-gradient(to bottom, #ccc 2px, #fff 2px, #fff 4px, #ccc 4px, #ccc 8px, #fff 8px, #fff 10px, #ccc 10px); }
   .tripple-line_brands {
     width: 690px; }
+    @media screen and (max-width: 985px) {
+      .tripple-line_brands {
+        width: 430px; } }
