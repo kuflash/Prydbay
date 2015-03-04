@@ -34,9 +34,7 @@
 	
 	/*fix other elements on the page moving (on Chrome)*/
 	-webkit-transform: translatez(0);
-	-moz-transform: translatez(0);
     	-ms-transform: translatez(0);
-    	-o-transform: translatez(0);
     	transform: translatez(0);
 }
 
@@ -85,8 +83,6 @@
 	height: 10px;
 	margin: 0 5px;
 	outline: 0;
-	-moz-border-radius: 5px;
-	-webkit-border-radius: 5px;
 	border-radius: 5px;
 }
 
@@ -118,6 +114,7 @@
 	text-indent: -9999px;
 	z-index: 2;
 	display: block;
+	-webkit-transition: 0.3s;
 	transition: 0.3s;
 }
 .bx-wrapper .bx-controls-direction a:hover {
@@ -137,6 +134,8 @@
 	border-radius: 1px;
 	border-right-color: transparent;
 	border-top-color: transparent;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
 	transform: rotate(45deg);
 	content: "";
 	display: block;
@@ -156,6 +155,8 @@
 	border-radius: 1px;
 	border-left-color: transparent;
 	border-bottom-color: transparent;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
 	transform: rotate(45deg);
 	content: "";
 	display: block;

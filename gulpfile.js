@@ -7,6 +7,7 @@ var gulp = require('gulp'),
   useref = require('gulp-useref'),
   gulpif = require('gulp-if'),
   uglify = require('gulp-uglify'),
+  autoprefixer = require('gulp-autoprefixer'),
   minifyCss = require('gulp-minify-css');
 
 
@@ -64,6 +65,17 @@ gulp.task('css', function () {
   gulp.src('./app/css/*.css')
     .pipe(connect.reload());
 });
+
+//autoprefix
+gulp.task('prefix', function () {
+    return gulp.src('app/css/*.css')
+        .pipe(autoprefixer({
+            browsers: ['last 6 versions'],
+            cascade: false
+        }))
+        .pipe(gulp.dest('app/css'));
+});
+
 //js
 gulp.task('js', function () {
   gulp.src('./app/js/*.js')

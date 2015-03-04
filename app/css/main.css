@@ -77,6 +77,8 @@ body {
   /* appear block with phone*/ }
   .header__nav {
     background: #fdfefc;
+    background: -webkit-gradient(linear, left top, left bottom, from(#fefefe), to(#f4f7ef));
+    background: -webkit-linear-gradient(top, #fefefe, #f4f7ef);
     background: linear-gradient(to bottom, #fefefe, #f4f7ef);
     border-top: 1px solid #ccc;
     border-bottom: 1px solid #ccc;
@@ -149,6 +151,8 @@ body {
         text-decoration: none;
         color: #fff;
         background: #89d656;
+        background: -webkit-gradient(linear, left top, left bottom, from(#8cd959), to(#74c141));
+        background: -webkit-linear-gradient(top, #8cd959, #74c141);
         background: linear-gradient(to bottom, #8cd959, #74c141); }
       .header__list-enter-link_line {
         margin-left: 2px;
@@ -190,6 +194,8 @@ body {
       float: left;
       min-width: 152px;
       background: #fefffe;
+      background: -webkit-gradient(linear, left top, left bottom, from(#fefffe), to(#f4f7ef));
+      background: -webkit-linear-gradient(top, #fefffe, #f4f7ef);
       background: linear-gradient(to bottom, #fefffe, #f4f7ef); }
       .header__contakts-tel_tel:before {
         width: 10px;
@@ -218,6 +224,8 @@ body {
       margin-left: 10px;
       min-width: 175px;
       background: #fefffe;
+      background: -webkit-gradient(linear, left top, left bottom, from(#fefffe), to(#f4f7ef));
+      background: -webkit-linear-gradient(top, #fefffe, #f4f7ef);
       background: linear-gradient(to bottom, #fefffe, #f4f7ef); }
       .header__contakts-comp_skype:before {
         width: 14px;
@@ -260,6 +268,7 @@ body {
         color: #73c040; }
     .header__menu-link {
       color: #4b4b4b;
+      -webkit-transition: 0.3s;
       transition: 0.3s; }
       .header__menu-link:hover {
         color: #73c040;
@@ -294,6 +303,8 @@ body {
       cursor: pointer;
       z-index: 1;
       background: #8dd95a url(../img/spritesheet.png) -1px 84px;
+      background: url(../img/spritesheet.png) -1px 84px, -webkit-gradient(linear, left top, left bottom, from(#8dd95a), to(#75c242));
+      background: url(../img/spritesheet.png) -1px 84px, -webkit-linear-gradient(top, #8dd95a, #75c242);
       background: url(../img/spritesheet.png) -1px 84px, linear-gradient(to bottom, #8dd95a, #75c242); }
   .header__price {
     background: #8dd95a url(../img/spritesheet.png) 0px 51px;
@@ -304,6 +315,7 @@ body {
     color: #fff;
     padding-left: 50px;
     cursor: pointer;
+    -webkit-transition: 0.3s;
     transition: 0.3s; }
     .header__price:hover {
       background-color: #a1e077; }
@@ -351,10 +363,13 @@ body {
       border: 0;
       text-align: center;
       cursor: pointer;
+      -webkit-transition: .3s;
       transition: .3s;
       color: #fff;
       font-size: 18px;
       float: left;
+      background: -webkit-gradient(linear, left top, left bottom, from(#898989), to(#6a6a6a));
+      background: -webkit-linear-gradient(top, #898989, #6a6a6a);
       background: linear-gradient(to bottom, #898989, #6a6a6a); }
       .header .header__buy-buttons:hover {
         background: #858585; }
@@ -363,6 +378,8 @@ body {
         display: inline-block; }
       .header .header__buy-buttons:hover {
         background: #8cdd56;
+        background: -webkit-gradient(linear, left top, left bottom, from(#92e45c), to(#75c342));
+        background: -webkit-linear-gradient(top, #92e45c, #75c342);
         background: linear-gradient(to bottom, #92e45c, #75c342); }
       .header .header__buy-buttons_basket {
         margin-left: 18px; }
@@ -453,8 +470,11 @@ body {
     border: 0;
     text-align: center;
     cursor: pointer;
+    -webkit-transition: .3s;
     transition: .3s;
     color: #fff;
+    background: -webkit-gradient(linear, left top, left bottom, from(#898989), to(#6a6a6a));
+    background: -webkit-linear-gradient(top, #898989, #6a6a6a);
     background: linear-gradient(to bottom, #898989, #6a6a6a);
     font-size: 18px;
     padding-left: 20px;
@@ -467,6 +487,8 @@ body {
     .main__our-products-nav-link:hover {
       text-decoration: none;
       background: #83d24e;
+      background: -webkit-gradient(linear, left top, left bottom, from(#83d24e), to(#75c242));
+      background: -webkit-linear-gradient(top, #83d24e, #75c242);
       background: linear-gradient(to bottom, #83d24e, #75c242); }
   .main__our-products-phones-list {
     list-style-type: none;
@@ -481,10 +503,12 @@ body {
     margin-bottom: 25px;
     text-align: center;
     padding-bottom: 25px;
+    -webkit-transition: 0.3s;
     transition: 0.3s; }
     .main__our-products-phones-item:first-child {
       margin-left: 0; }
     .main__our-products-phones-item:hover {
+      -webkit-box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.5);
       box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.5); }
   .main__our-products-phones-link {
     width: 225px;
@@ -561,7 +585,10 @@ body {
     border: 0;
     text-align: center;
     cursor: pointer;
+    -webkit-transition: .3s;
     transition: .3s;
+    background: -webkit-gradient(linear, left top, left bottom, from(#949494), to(#696969));
+    background: -webkit-linear-gradient(top, #949494, #696969);
     background: linear-gradient(to bottom, #949494, #696969);
     color: #fff;
     font-size: 18px;
@@ -573,6 +600,8 @@ body {
       display: inline-block; }
     .main__our-products-phones-button:hover {
       background: #8dde57;
+      background: -webkit-gradient(linear, left top, left bottom, from(#92e45c), to(#76c343));
+      background: -webkit-linear-gradient(top, #92e45c, #76c343);
       background: linear-gradient(to bottom, #92e45c, #76c343); }
   .main__our-products-discount {
     background: #d50000;
@@ -600,6 +629,8 @@ body {
     width: 45px;
     height: 45px;
     background: #89d953;
+    background: -webkit-gradient(linear, left top, left bottom, from(#92e35c), to(#78c645));
+    background: -webkit-linear-gradient(top, #92e35c, #78c645);
     background: linear-gradient(to bottom, #92e35c, #78c645);
     display: inline-block;
     margin-left: 10px;
@@ -607,7 +638,10 @@ body {
     position: relative; }
     .main__control:hover {
       background: #f8faf5;
+      background: -webkit-gradient(linear, left top, left bottom, from(#fefefe), to(#f3f7ef));
+      background: -webkit-linear-gradient(top, #fefefe, #f3f7ef);
       background: linear-gradient(to bottom, #fefefe, #f3f7ef);
+      -webkit-box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.2);
       box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.2); }
     .main__control:before {
       position: absolute;
@@ -618,6 +652,8 @@ body {
       border: 10px solid #fff;
       top: 14px;
       left: 13px;
+      -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
       transform: rotate(45deg);
       border-radius: 4px; }
     .main__control-left:before {
@@ -667,6 +703,7 @@ body {
         margin-bottom: 15px; }
     .aside__first-email {
       width: 100%;
+      -webkit-box-sizing: border-box;
       box-sizing: border-box;
       padding: 12px 5px;
       color: #cfcfcf;
@@ -696,9 +733,12 @@ body {
       border: 0;
       text-align: center;
       cursor: pointer;
+      -webkit-transition: .3s;
       transition: .3s;
       color: #fff;
       font-size: 18px;
+      background: -webkit-gradient(linear, left top, left bottom, from(#92e35c), to(#77c544));
+      background: -webkit-linear-gradient(top, #92e35c, #77c544);
       background: linear-gradient(to bottom, #92e35c, #77c544); }
       .aside__first-submit:hover {
         background: #74cc3a; }
@@ -706,6 +746,8 @@ body {
         content: "";
         display: inline-block; }
       .aside__first-submit:hover {
+        background: -webkit-gradient(linear, left top, left bottom, from(#77c544), to(#92e35c));
+        background: -webkit-linear-gradient(top, #77c544, #92e35c);
         background: linear-gradient(to bottom, #77c544, #92e35c); }
   .aside__news-title {
     text-transform: uppercase;
@@ -737,10 +779,15 @@ body {
     border: 1px solid #ccc;
     text-align: center;
     background: #fafbf8;
+    background: -webkit-gradient(linear, left top, left bottom, from(#fdfefd), to(#f3f6ee));
+    background: -webkit-linear-gradient(top, #fdfefd, #f3f6ee);
     background: linear-gradient(to bottom, #fdfefd, #f3f6ee);
     padding: 5px 10px 10px;
+    -webkit-transition: 0.3s;
     transition: 0.3s; }
     .aside__weekends:hover {
+      background: -webkit-gradient(linear, left top, left bottom, from(#f3f6ee), to(#fdfefd));
+      background: -webkit-linear-gradient(top, #f3f6ee, #fdfefd);
       background: linear-gradient(to bottom, #f3f6ee, #fdfefd); }
     .aside__weekends-list {
       list-style-type: none;
@@ -807,11 +854,14 @@ body {
     border: 1px solid #ccc;
     margin-left: 8px;
     background: #fffffe;
+    background: -webkit-gradient(linear, left top, left bottom, from(#fefefe), to(#f5f8f1));
+    background: -webkit-linear-gradient(top, #fefefe, #f5f8f1);
     background: linear-gradient(to bottom, #fefefe, #f5f8f1);
     cursor: pointer; }
     .brands-item:first-child {
       margin-left: 0; }
     .brands-item:hover {
+      -webkit-box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
       box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4); }
       .brands-item:hover .brands-link_mts {
         background-position: -4px -249px; }
@@ -918,6 +968,8 @@ body {
       border-left-color: transparent;
       border-bottom-color: transparent;
       position: absolute;
+      -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
       transform: rotate(45deg);
       left: -18px;
       bottom: 5px; }
@@ -971,6 +1023,7 @@ body {
   margin-top: 18px;
   margin-left: 10px;
   height: 12px;
+  background: -webkit-linear-gradient(top, #ccc 2px, #fff 2px, #fff 4px, #ccc 4px, #ccc 8px, #fff 8px, #fff 10px, #ccc 10px);
   background: linear-gradient(to bottom, #ccc 2px, #fff 2px, #fff 4px, #ccc 4px, #ccc 8px, #fff 8px, #fff 10px, #ccc 10px); }
   .tripple-line_brands {
     width: 690px; }
