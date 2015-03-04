@@ -218,6 +218,11 @@ body {
       @media screen and (max-width: 810px) {
         .header .header__logo-link {
           width: 200px; } }
+      @media screen and (max-width: 550px) {
+        .header .header__logo-link {
+          float: none;
+          margin: 0 auto 15px;
+          display: block; } }
       .header .header__logo-link img {
         max-width: 308px; }
         @media screen and (max-width: 900px) {
@@ -236,6 +241,11 @@ body {
       .header__contakts {
         font-size: 10px;
         padding-top: 4px; } }
+    @media screen and (max-width: 550px) {
+      .header__contakts {
+        float: none;
+        width: 75%;
+        margin: 0 auto 15px; } }
     .header__contakts-tel, .header__contakts-comp {
       padding-left: 25px;
       border: 1px solid #ccc;
@@ -494,6 +504,9 @@ body {
     @media screen and (max-width: 900px) {
       .slider__content-img-wrapper {
         width: 230px !important; } }
+    @media screen and (max-width: 600px) {
+      .slider__content-img-wrapper {
+        width: 180px !important; } }
   .slider__text {
     float: left;
     margin-left: 90px;
@@ -503,6 +516,9 @@ body {
       .slider__text {
         margin-left: 0;
         float: right; } }
+    @media screen and (max-width: 530px) {
+      .slider__text {
+        width: 165px; } }
     .slider__text-first {
       font-size: 45px; }
       @media screen and (max-width: 900px) {
@@ -511,6 +527,9 @@ body {
       @media screen and (max-width: 665px) {
         .slider__text-first {
           font-size: 26px; } }
+      @media screen and (max-width: 600px) {
+        .slider__text-first {
+          font-size: 20px; } }
     .slider__text-second {
       font-size: 70px;
       text-transform: uppercase;
@@ -521,6 +540,10 @@ body {
       @media screen and (max-width: 665px) {
         .slider__text-second {
           font-size: 35px; } }
+      @media screen and (max-width: 665px) {
+        .slider__text-second {
+          font-size: 28px;
+          margin-bottom: 10px; } }
     .slider__text-third {
       font-size: 17px; }
       @media screen and (max-width: 665px) {
@@ -537,6 +560,12 @@ body {
       width: 710px;
       margin: 0 auto;
       float: none; } }
+  @media screen and (max-width: 720px) {
+    .main {
+      width: 580px; } }
+  @media screen and (max-width: 600px) {
+    .main {
+      width: 94%; } }
   .main-content {
     margin-bottom: 10px; }
   .main__title {
@@ -625,6 +654,9 @@ body {
     @media screen and (max-width: 985px) {
       .main__our-products-phones-item {
         width: 230px; } }
+    @media screen and (max-width: 730px) {
+      .main__our-products-phones-item {
+        width: 235px; } }
     .main__our-products-phones-item:first-child {
       margin-left: 0; }
     .main__our-products-phones-item:hover {
@@ -736,6 +768,11 @@ body {
     color: #636363;
     float: left;
     width: 350px; }
+    @media screen and (max-width: 605px) {
+      .main__prydbay-text {
+        float: none;
+        text-align: center;
+        width: 100%; } }
   .main__prydbay-p {
     margin-top: 0; }
   .main__prydbay-img-wrap {
@@ -743,6 +780,10 @@ body {
     @media screen and (max-width: 985px) {
       .main__prydbay-img-wrap {
         width: 230px; } }
+    @media screen and (max-width: 605px) {
+      .main__prydbay-img-wrap {
+        float: none;
+        margin: 0 auto; } }
   .main__prydbay-img {
     float: right; }
     @media screen and (max-width: 985px) {
@@ -877,6 +918,9 @@ body {
       display: inline-block;
       width: 570px;
       vertical-align: top; } }
+  @media screen and (max-width: 590px) {
+    .aside__news {
+      width: 290px; } }
   @media screen and (max-width: 986px) {
     .aside__news__block {
       display: inline-block;
@@ -1076,6 +1120,9 @@ body {
     padding-bottom: 314px;
     content: "";
     display: block; }
+    @media screen and (max-width: 965px) {
+      .footer-fix {
+        padding-bottom: 405px; } }
   .footer__text {
     margin-bottom: 50px; }
     .footer__text-title {
@@ -1169,4 +1216,11 @@ body {
     width: 690px; }
     @media screen and (max-width: 985px) {
       .tripple-line_brands {
-        width: 430px; } }
+        width: 430px;
+        position: absolute;
+        left: 50%;
+        margin-left: -215px; } }
+    @media screen and (max-width: 985px) {
+      .tripple-line_brands {
+        width: 200px;
+        margin-left: -100px; } }
