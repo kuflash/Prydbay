@@ -6,7 +6,7 @@ body {
 	font-size: 14px;
 }
 .center-layout {
-	width: 960px;
+	max-width: 960px;
 	margin: 0 auto;
 	padding-left: 5px;
 	padding-right: 5px;
@@ -36,6 +36,17 @@ body {
 		&:after {
 			@extend .clear;
 		}
+		@media screen and (max-width: 900px) {
+			font-size: 14px;
+		}
+		@media screen and (max-width: 860px) {
+			font-size: 12px;
+		}
+		@media screen and (max-width: 810px) {
+			float: none;
+			width: 310px;
+			margin: 0 auto;
+		}
 		&-item {
 			float: left;
 			margin-left: 53px;
@@ -52,6 +63,9 @@ body {
 			&:hover {
 				color: #85c858;
 				text-decoration: none;
+			}
+			@media screen and (max-width: 900px) {
+				padding: 10px 5px 10px;
 			}
 			&:before {
 				display: block;
@@ -85,11 +99,15 @@ body {
 			    height: 11px;
 			    background-position: -298px -5px;
 			    top: 18px;
-			    left: -25px
+			    left: -25px;
+			    @media screen and (max-width: 900px) {
+					top: 13px;
+				}
 			    }
 			    &:hover:before {
 			    	background-position: -298px -26px;
 			    }
+			   
 			}
 		}
 	}
@@ -101,9 +119,23 @@ body {
 		&:after {
 			@extend .clear;
 		}
+		@media screen and (max-width: 900px) {
+			font-size: 14px;
+		}
+		@media screen and (max-width: 860px) {
+			font-size: 12px;
+		}
+		@media screen and (max-width: 810px) {
+			float: none;
+			width: 430px;
+			margin: 0 auto;
+		}
 		&-item {
 			float: left;
 			margin-left: 45px;
+			@media screen and (max-width: 810px) {
+				margin-left: 27px;
+			}
 			&:first-child {
 				margin-left: 0;
 			}
@@ -120,6 +152,9 @@ body {
 				color: #fff;
 				background: #89d656;
 				background: linear-gradient(to bottom, #8cd959, #74c141);
+			}
+			@media screen and (max-width: 900px) {
+				padding: 10px 5px 10px;
 			}
 			&_line {
 				margin-left: 2px;
@@ -141,6 +176,9 @@ body {
 				    position: absolute;
 				    left: 5px;
 				    top: 18px;
+				    @media screen and (max-width: 900px) {
+						top: 11px;
+					}
 				}
 			}
 		}
@@ -150,6 +188,25 @@ body {
 		margin-bottom: 10px;
 		&-link {
 			float: left;
+			max-width: 308px;
+			max-height: 85px;
+
+			@media screen and (max-width: 900px) {
+					width: 245px;	
+			}
+			@media screen and (max-width: 810px) {
+					width: 200px;	
+			}
+			& img {
+				max-width: 308px;
+
+				@media screen and (max-width: 900px) {
+					width: 245px;
+				}
+				@media screen and (max-width: 810px) {
+					width: 200px;
+				}
+			}
 		}
 	}
 	&__contakts {
@@ -157,6 +214,13 @@ body {
 		padding-top: 18px;
 		&:after {
 			@extend .clear;
+		}
+		@media screen and (max-width: 900px) {
+			font-size: 12px;
+		}
+		@media screen and (max-width: 810px) {
+			font-size: 10px;
+			padding-top: 4px;
 		}
 		&-tel, &-comp {
 			padding-left: 25px;
@@ -175,6 +239,9 @@ body {
 			min-width: 152px;
 			background: #fefffe;
 			background: linear-gradient(to bottom, #fefffe, #f4f7ef);
+			@media screen and (max-width: 810px) {
+				min-width: 105px;
+			}
 			&_tel:before {
 				width: 10px;
 			    height: 16px;
@@ -186,6 +253,9 @@ body {
 			    display: block;	
 			    left: -18px;
 			    top: 4px;
+			    @media screen and (max-width: 900px) {
+					top: 1px;
+				}
 			}
 			&_fax:before {
 				 width: 16px;
@@ -198,6 +268,9 @@ body {
 			    display: block;	
 			    left: -20px;
 			    top: 4px;
+			    @media screen and (max-width: 900px) {
+					top: 1px;
+				}
 			}
 		}
 		&-comp {
@@ -206,6 +279,9 @@ body {
 			min-width: 175px;
 			background: #fefffe;
 			background: linear-gradient(to bottom, #fefffe, #f4f7ef);
+			@media screen and (max-width: 810px) {
+				min-width: 135px;
+			}
 			&_skype:before {
 				width: 14px;
 			    height: 15px;
@@ -217,6 +293,9 @@ body {
 			    display: block;	
 			    left: -20px;
 			    top: 4px;
+			    @media screen and (max-width: 925px) {
+					top: 1px;
+				}
 			}
 			&_mail:before {
 				width: 16px;
@@ -229,6 +308,9 @@ body {
 			    display: block;	
 			    left: -20px;
 			    top: 4px;
+			    @media screen and (max-width: 900px) {
+					top: 2px;
+				}
 			}
 		}
 	}
@@ -239,6 +321,12 @@ body {
 	&__menu {
 		float: left;
 		margin-top: 10px;
+		@media screen and (max-width: 960px) {
+			float: none;
+			margin: 0 auto;
+			width: 445px;
+			margin-bottom: 10px;
+		}
 		&-list {
 			@include list;
 			&:after {
@@ -257,6 +345,12 @@ body {
 			&_active a{
 				color: #73c040;
 			}
+			@media screen and (max-width: 1060px) {
+				font-size: 16px;
+			}
+			@media screen and (max-width: 1060px) {
+				font-size: 16px;
+			}
 		}
 		&-link {
 			color: #4b4b4b;
@@ -274,6 +368,11 @@ body {
 		float: right;
 		min-width: 442px;
 		position: relative;
+		@media screen and (max-width: 960px) {
+			float: none;
+			margin: 0 auto;
+			width: 100px;
+		}
 		&:after {
 			@extend .clear;
 		}
@@ -288,6 +387,9 @@ body {
 			border: 0;
 			color: #4b4b4b;
 			min-width: 194px;
+			@media screen and (max-width: 930px) {
+				padding: 9px 5px 10px;
+			}
 			&:focus {
 				outline: 0;
 			}
@@ -297,7 +399,10 @@ body {
 			height: 42px;
 			position: absolute;
 			right: 0;
-			top: 0;	
+			top: 0;
+			@media screen and (max-width: 930px) {
+				height: 36px;
+			}	
 		}
 
 		&-submit {
@@ -327,6 +432,12 @@ body {
 		&:hover {
 			background-color: lighten(#8dd95a, 7%);
 		}
+		@media screen and (max-width: 930px) {
+				padding-top: 11px;
+				padding-bottom: 10px;
+				padding-left: 35px;
+				background-position: -4px 50px;
+			}	
 	}
 
 	/* appear block with phone*/
@@ -412,6 +523,12 @@ body {
 	&__content-img-wrapper {
 		float: left;
 	}
+
+	&__content-img {
+		@media screen and (max-width: 900px)
+			width: 80%;
+		}
+	}
 	&__text {
 		float: left;
 		margin-left: 90px;
@@ -419,6 +536,9 @@ body {
 		color: #4b4b4b;
 		&-first {
 			font-size: 45px;
+			@media screen and (max-width: 900px)
+				font-size: 35px;
+			}
 		}
 		&-second {
 			font-size: 70px;
@@ -430,9 +550,7 @@ body {
 		}
 	}
 }
-.bx-viewport {
-	width: auto!important;
-}
+
 
 /* our products block */
 .main {

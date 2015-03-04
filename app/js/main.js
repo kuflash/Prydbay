@@ -18,7 +18,9 @@ $(document).ready(function(){
 				  	'pager' : false,
 				  	'controls' : true,
 				  	'auto' : true,
-				  	'pause' : 6500
+				  	'pause' : 6500,
+				  	'adaptiveHeight' : true,
+				  	'responsive': true
 				  });
 				this.addCart.on('click', this.buy); // appear blco with buy
 				this.headerMunu.on('click', this.menuActive);
