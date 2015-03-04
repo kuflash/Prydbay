@@ -614,6 +614,9 @@ body {
 		font-weight: normal;
 		font-size: 32px;
 		margin-bottom: 13px;
+		@media screen and (max-width: 600px) {
+				font-size: 26px;
+		}
 		&_float {
 			float: left;
 			margin: 0;
@@ -638,10 +641,12 @@ body {
 			@include list;
 			@extend .clear;
 			margin-bottom: 20px;
-			
+			@media screen and (max-width: 510px) {
+				text-align: center;
+			}
 		}
 		&-nav-item {
-			float: left;
+			display: inline-block;
 			margin-left: 10px;
 			&:first-child {
 				margin-left: 0;
@@ -659,6 +664,10 @@ body {
 				line-height: 16px;
 				padding-top: 10px;
 				height: 25px;
+			}
+			@media screen and (max-width: 600px) {
+				font-size: 12px;
+				margin-bottom: 10px;
 			}
 			&:hover {
 				text-decoration: none;
@@ -1113,6 +1122,10 @@ body {
     		width: 500px;
     		margin: 0 auto;
     	}
+		@media screen and (max-width: 515px) {
+    		width: 330px;
+    		margin: 0 auto;
+    	}
 	}
 	.main__title, .main__controls {
 		display: inline-block;
@@ -1229,6 +1242,16 @@ body {
 		@media screen and (max-width: 965px){
 			padding-bottom: 405px;
 		}
+		@media screen and (max-width: 580px){
+			padding-bottom: 600px;
+		}
+		@media screen and (max-width: 580px){
+			padding-bottom: 630px;
+		}
+
+		@media screen and (max-width: 515px){
+			padding-bottom: 635px;
+		}
 	}
 	&__text {
 		margin-bottom: 50px;
@@ -1291,6 +1314,10 @@ body {
 			@include list;
 			width: 238px;
 			float: left;
+			@media screen and (max-width: 575px) {
+			float: none;
+			margin: 0 auto;
+		}
 			&:after {
 				@extend .clear;
 			}
@@ -1342,6 +1369,9 @@ body {
 		text-align: center;
 		float: right;
 		bottom: 25px;
+		@media screen and (max-width: 575px) {
+			float: none;
+		}
 	}
 }
 .tripple-line {

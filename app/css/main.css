@@ -575,6 +575,9 @@ body {
     font-weight: normal;
     font-size: 32px;
     margin-bottom: 13px; }
+    @media screen and (max-width: 600px) {
+      .main__title {
+        font-size: 26px; } }
     .main__title_float {
       float: left;
       margin: 0;
@@ -595,8 +598,11 @@ body {
     padding: 0;
     margin: 0;
     margin-bottom: 20px; }
+    @media screen and (max-width: 510px) {
+      .main__our-products-nav-list {
+        text-align: center; } }
   .main__our-products-nav-item {
-    float: left;
+    display: inline-block;
     margin-left: 10px; }
     .main__our-products-nav-item:first-child {
       margin-left: 0; }
@@ -630,6 +636,10 @@ body {
         line-height: 16px;
         padding-top: 10px;
         height: 25px; } }
+    @media screen and (max-width: 600px) {
+      .main__our-products-nav-link {
+        font-size: 12px;
+        margin-bottom: 10px; } }
     .main__our-products-nav-link:hover {
       text-decoration: none;
       background: #83d24e;
@@ -1029,6 +1039,10 @@ body {
       .brands-list {
         width: 500px;
         margin: 0 auto; } }
+    @media screen and (max-width: 515px) {
+      .brands-list {
+        width: 330px;
+        margin: 0 auto; } }
   .brands .main__title, .brands .main__controls {
     display: inline-block; }
   .brands-item {
@@ -1123,6 +1137,15 @@ body {
     @media screen and (max-width: 965px) {
       .footer-fix {
         padding-bottom: 405px; } }
+    @media screen and (max-width: 580px) {
+      .footer-fix {
+        padding-bottom: 600px; } }
+    @media screen and (max-width: 580px) {
+      .footer-fix {
+        padding-bottom: 630px; } }
+    @media screen and (max-width: 515px) {
+      .footer-fix {
+        padding-bottom: 635px; } }
   .footer__text {
     margin-bottom: 50px; }
     .footer__text-title {
@@ -1171,6 +1194,10 @@ body {
     margin: 0;
     width: 238px;
     float: left; }
+    @media screen and (max-width: 575px) {
+      .footer__copy-social-list {
+        float: none;
+        margin: 0 auto; } }
   .footer__copy-social-item, .footer__copy-social-link {
     display: inline-block; }
   .footer__copy-social-link {
@@ -1204,6 +1231,9 @@ body {
     text-align: center;
     float: right;
     bottom: 25px; }
+    @media screen and (max-width: 575px) {
+      .footer__copy-copyright {
+        float: none; } }
 
 .tripple-line {
   float: left;
