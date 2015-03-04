@@ -30,10 +30,10 @@ header.header
 					a.header__contakts-comp_mail(href="mailto:support@prydbay.com") support@prydbay.com
 	section.header__bottom
 		.center-layout
-			nav.header__menu
+			nav.header__menu#header__menu
 				ul.header__menu-list
-					li.header__menu-item                         
-						a.header__menu-link.header__menu-link_active(href="#") Главная
+					li.header__menu-item.header__menu-item_active                         
+						a.header__menu-link(href="#") Главная
 					li.header__menu-item
 						a.header__menu-link.header__menu-link(href="#") Каталог
 					li.header__menu-item
@@ -50,7 +50,7 @@ header.header
 							input.header__info-submit(type="submit")
 							.fake-submit
 					.header__price#header__price <span class="header__price__number">1</span> шт. - <span class=".header__price__price">89372.99</span>
-				.header__buy
+				.header__buy#header__buy.hide
 					.header__buy-img-wrap
 						img.header__buy-img(src="img/buy-img.jpg" alt="buy-img")
 					.header__buy-text

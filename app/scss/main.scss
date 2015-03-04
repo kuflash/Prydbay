@@ -254,11 +254,14 @@ body {
 			&:first-child {
 				margin-left: 0;
 			}
+			&_active a{
+				color: #73c040;
+			}
 		}
 		&-link {
 			color: #4b4b4b;
 			transition: 0.3s;
-			&:hover, &_active { 
+			&:hover{ 
 				color: #73c040;
 				text-decoration: none;
 			}
