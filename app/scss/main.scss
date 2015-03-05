@@ -149,6 +149,9 @@ body {
 		@media screen and (max-width: 465px) {
 			width: 348px;
 		}
+		@media screen and (max-width: 370px) {
+			width: 253px;
+		}
 		&-item {
 			float: left;
 			margin-left: 45px;
@@ -408,6 +411,9 @@ body {
 			text-align: center;
 			width: 330px;
 		}
+		@media screen and (max-width: 370px) {
+				width: 213px;
+			}
 		&-list {
 			@include list;
 			&:after {
@@ -416,6 +422,9 @@ body {
 			@media screen and (max-width: 490px) {
 				display: inline-block;
 				min-width: 327px;
+			}
+			@media screen and (max-width: 370px) {
+				min-width: 213px;
 			}
 		}
 		&-item {
@@ -439,6 +448,9 @@ body {
 			@media screen and (max-width: 490px) {
 				font-size: 12px;
 				margin-left: 12px;
+			}
+			@media screen and (max-width: 370px) {
+				margin-bottom: 10px;
 			}
 		}
 		&-link {
@@ -1365,6 +1377,9 @@ body {
 		@media screen and (max-width: 534px){
 			padding-bottom: 754px;
 		}
+		@media screen and (max-width: 456px){
+			padding-bottom: 951px;
+		}
 	}
 	&__text {
 		margin-bottom: 50px;
@@ -1389,6 +1404,9 @@ body {
 		&_information {
 			@media screen and (max-width: 670px){
 				margin-right: 45px;
+			}
+			@media screen and (max-width: 425px){
+				margin-left: 0;
 			}
 		}
 		&_contakts {
@@ -1423,7 +1441,7 @@ body {
 			position: absolute;
 			transform: rotate(45deg);
 			left: -18px;
-			bottom: 5px;
+			bottom: 5px; 
 		}
 	}
 	&__email-link {
