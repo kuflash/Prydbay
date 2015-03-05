@@ -870,6 +870,7 @@ body {
 				}
 				@media screen and (max-width: 730px) {
 					width: 235px;
+					margin-bottom: 0;
 				}
 				&:first-child {
 					margin-left: 0;
@@ -880,13 +881,16 @@ body {
 			}
 			&-link {
 				width: 225px;
-				height: 237px;
+				min-height: 237px;
 				display: block;
 				position: relative;
 				margin-bottom: 10px;
+				@media screen and (max-width: 730px) {
+					min-height: 210px;
+				}
 			}
 		}
-		&-discount-price {
+		&-discount-price { 
 			position: absolute;
 			background: #73c040;
 			text-align: center;
