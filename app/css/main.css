@@ -550,14 +550,31 @@ body {
     top: 50px;
     right: 0;
     width: 300px; }
+    @media screen and (max-width: 600px) {
+      .header .header__buy {
+        width: 255px; } }
+    @media screen and (max-width: 490px) {
+      .header .header__buy {
+        width: 255px;
+        top: 65px;
+        right: -30px; } }
     .header .header__buy-img-wrap {
       float: left;
       margin-top: 5px; }
+      @media screen and (max-width: 645px) {
+        .header .header__buy-img-wrap {
+          width: 80px; } }
+    @media screen and (max-width: 645px) {
+      .header .header__buy-img {
+        width: 80px; } }
     .header .header__buy-text {
       float: left;
       font-size: 18px;
       color: #555;
       line-height: 25px; }
+      @media screen and (max-width: 600px) {
+        .header .header__buy-text {
+          font-size: 14px; } }
     .header .header__buy-title {
       margin-top: 12px;
       margin-bottom: 8px; }
@@ -569,10 +586,16 @@ body {
       color: #555;
       font-size: 18px;
       margin-bottom: 15px; }
+      @media screen and (max-width: 600px) {
+        .header .header__buy-price_sum {
+          font-size: 14px; } }
     .header .header__buy-price-red {
       color: #bb0000; }
     .header .header__buy-button {
       padding-bottom: 20px; }
+      @media screen and (max-width: 600px) {
+        .header .header__buy-button {
+          padding-bottom: 10px; } }
     .header .header__buy-buttons {
       width: 105px;
       height: 45px;
@@ -604,6 +627,13 @@ body {
       .header .header__buy-buttons_buy {
         float: right;
         margin-right: 18px; }
+      @media screen and (max-width: 600px) {
+        .header .header__buy-buttons {
+          width: 80px;
+          height: 20px;
+          line-height: 15px;
+          padding-top: 5px;
+          font-size: 12px; } }
 
 /* slider block */
 .slider {
@@ -625,6 +655,9 @@ body {
     @media screen and (max-width: 600px) {
       .slider__content-img-wrapper {
         width: 180px !important; } }
+    @media screen and (max-width: 400px) {
+      .slider__content-img-wrapper {
+        width: 120px !important; } }
   .slider__text {
     float: left;
     margin-left: 90px;
@@ -637,6 +670,9 @@ body {
     @media screen and (max-width: 530px) {
       .slider__text {
         width: 165px; } }
+    @media screen and (max-width: 665px) {
+      .slider__text {
+        margin-top: 0; } }
     .slider__text-first {
       font-size: 45px; }
       @media screen and (max-width: 900px) {
@@ -645,9 +681,9 @@ body {
       @media screen and (max-width: 665px) {
         .slider__text-first {
           font-size: 26px; } }
-      @media screen and (max-width: 600px) {
+      @media screen and (max-width: 400px) {
         .slider__text-first {
-          font-size: 20px; } }
+          font-size: 17px; } }
     .slider__text-second {
       font-size: 70px;
       text-transform: uppercase;
@@ -662,11 +698,18 @@ body {
         .slider__text-second {
           font-size: 28px;
           margin-bottom: 10px; } }
+      @media screen and (max-width: 665px) {
+        .slider__text-second {
+          font-size: 20px;
+          margin-bottom: 10px; } }
     .slider__text-third {
       font-size: 17px; }
       @media screen and (max-width: 665px) {
         .slider__text-third {
           font-size: 14px; } }
+      @media screen and (max-width: 665px) {
+        .slider__text-third {
+          font-size: 10px; } }
 
 /* our products block */
 .main {
@@ -1247,26 +1290,8 @@ body {
   z-index: 12;
   background: #666;
   color: #fff;
-  padding-bottom: 25px; }
-  .footer-fix {
-    padding-bottom: 314px;
-    content: "";
-    display: block; }
-    @media screen and (max-width: 965px) {
-      .footer-fix {
-        padding-bottom: 514px; } }
-    @media screen and (max-width: 581px) {
-      .footer-fix {
-        padding-bottom: 514px; } }
-    @media screen and (max-width: 575px) {
-      .footer-fix {
-        padding-bottom: 558px; } }
-    @media screen and (max-width: 534px) {
-      .footer-fix {
-        padding-bottom: 754px; } }
-    @media screen and (max-width: 456px) {
-      .footer-fix {
-        padding-bottom: 951px; } }
+  padding-bottom: 25px;
+  position: static; }
   .footer__text {
     margin-bottom: 50px; }
     .footer__text-title {

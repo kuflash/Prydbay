@@ -585,15 +585,34 @@ body {
 		top: 50px;
 		right: 0;
 		width: 300px;
+		@media screen and (max-width: 600px) {
+			width: 255px;
+		}
+		@media screen and (max-width: 490px) {
+			width: 255px;
+			top: 65px;
+			right: -30px;
+		}
 		&-img-wrap {
 			float: left;
 			margin-top: 5px;
+			@media screen and (max-width: 645px) {
+				width: 80px;
+			}
+		}
+		&-img {
+			@media screen and (max-width: 645px) {
+				width: 80px;
+			}
 		}
 		&-text {
 			float: left;
 			font-size: 18px;
 			color: #555;
 			line-height: 25px;
+			@media screen and (max-width: 600px) {
+				font-size: 14px;
+			}
 
 		}
 		&-title {
@@ -610,6 +629,9 @@ body {
 				color: #555;
 				font-size: 18px;
 				margin-bottom: 15px;
+				@media screen and (max-width: 600px) {
+					font-size: 14px;
+				}
 			}
 			&-red {
 				color: #bb0000;
@@ -620,6 +642,9 @@ body {
 			padding-bottom: 20px;
 			&:after {
 				@extend .clear;
+			}
+			@media screen and (max-width: 600px) {
+				padding-bottom: 10px;
 			}
 		}
 		&-buttons {
@@ -638,6 +663,13 @@ body {
 			&_buy {
 				float: right;
 				margin-right: 18px;
+			}
+			@media screen and (max-width: 600px) {
+				width: 80px;
+				height: 20px;
+				line-height: 15px;
+				padding-top: 5px;
+				font-size: 12px;
 			}
 		}
 	}
@@ -664,6 +696,9 @@ body {
 		@media screen and (max-width: 600px) {
 			width: 180px!important;
 		}
+		@media screen and (max-width: 400px) {
+			width: 120px!important;
+		}
 	}
 
 	&__text {
@@ -678,6 +713,9 @@ body {
 		@media screen and (max-width: 530px) {
 			width: 165px;
 		}
+		@media screen and (max-width: 665px) {
+			margin-top: 0;
+		}
 		&-first {
 			font-size: 45px;
 			@media screen and (max-width: 900px) {
@@ -686,8 +724,9 @@ body {
 			@media screen and (max-width: 665px) {
 				font-size: 26px;
 			}
-			@media screen and (max-width: 600px) {
-				font-size: 20px;
+				
+			@media screen and (max-width: 400px) {
+				font-size: 17px;
 			}
 		}
 		&-second {
@@ -704,11 +743,18 @@ body {
 				font-size: 28px;
 				margin-bottom: 10px;
 			}
+			@media screen and (max-width: 665px) {
+				font-size: 20px;
+				margin-bottom: 10px;
+			}
 		}
 		&-third {
 			font-size: 17px;
 			@media screen and (max-width: 665px) {
 				font-size: 14px;
+			}
+			@media screen and (max-width: 665px) {
+				font-size: 10px;
 			}
 		}
 	}
@@ -1361,26 +1407,7 @@ body {
 	background: #666;
 	color: #fff;
 	padding-bottom: 25px;
-	&-fix {
-		padding-bottom: 314px;
-		content: "";
-		display: block;
-		@media screen and (max-width: 965px){
-			padding-bottom: 514px;
-		}
-		@media screen and (max-width: 581px){
-			padding-bottom: 514px;
-		}
-		@media screen and (max-width: 575px){
-			padding-bottom: 558px;
-		}
-		@media screen and (max-width: 534px){
-			padding-bottom: 754px;
-		}
-		@media screen and (max-width: 456px){
-			padding-bottom: 951px;
-		}
-	}
+	position: static;
 	&__text {
 		margin-bottom: 50px;
 		&:after {
