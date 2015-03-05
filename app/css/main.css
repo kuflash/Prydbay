@@ -98,11 +98,20 @@ body {
         float: none;
         width: 310px;
         margin: 0 auto; } }
+    @media screen and (max-width: 465px) {
+      .header__list-profile {
+        float: none;
+        width: 215px;
+        margin: 0 auto;
+        font-size: 11px; } }
     .header__list-profile-item {
       float: left;
       margin-left: 53px; }
       .header__list-profile-item:first-child {
         margin-left: 0; }
+      @media screen and (max-width: 465px) {
+        .header__list-profile-item {
+          margin: 2px; } }
     .header__list-profile-link {
       color: #666;
       display: inline-block;
@@ -115,6 +124,9 @@ body {
       @media screen and (max-width: 900px) {
         .header__list-profile-link {
           padding: 10px 5px 10px; } }
+      @media screen and (max-width: 465px) {
+        .header__list-profile-link {
+          padding: 7px 5px 7px; } }
       .header__list-profile-link:before {
         display: block;
         content: "";
@@ -122,6 +134,9 @@ body {
         left: -28px;
         background-image: url(../img/spritesheet.png);
         background-repeat: no-repeat; }
+        @media screen and (max-width: 465px) {
+          .header__list-profile-link:before {
+            background: none; } }
       .header__list-profile-link_profile:hover:before {
         background-position: -109px -47px; }
       .header__list-profile-link_profile:before {
@@ -162,6 +177,9 @@ body {
         float: none;
         width: 430px;
         margin: 0 auto; } }
+    @media screen and (max-width: 465px) {
+      .header__list-enter {
+        width: 348px; } }
     .header__list-enter-item {
       float: left;
       margin-left: 45px; }
@@ -172,6 +190,10 @@ body {
         margin-left: 0; }
       .header__list-enter-item_enter {
         margin-left: 20px; }
+      @media screen and (max-width: 465px) {
+        .header__list-enter-item {
+          margin-left: 5px;
+          font-size: 11px; } }
     .header__list-enter-link {
       color: #666;
       display: inline-block;
@@ -184,6 +206,9 @@ body {
       @media screen and (max-width: 900px) {
         .header__list-enter-link {
           padding: 10px 5px 10px; } }
+      @media screen and (max-width: 465px) {
+        .header__list-enter-link {
+          padding: 7px 5px 7px; } }
       .header__list-enter-link_line {
         margin-left: 2px;
         margin-right: 1px;
@@ -192,6 +217,9 @@ body {
         position: relative;
         width: 80px;
         text-align: right; }
+        @media screen and (max-width: 465px) {
+          .header__list-enter-link_language {
+            text-align: left; } }
         .header__list-enter-link_language:before {
           width: 16px;
           height: 11px;
@@ -206,6 +234,9 @@ body {
           @media screen and (max-width: 900px) {
             .header__list-enter-link_language:before {
               top: 11px; } }
+          @media screen and (max-width: 465px) {
+            .header__list-enter-link_language:before {
+              background: none; } }
   .header .header__logo {
     margin-bottom: 10px; }
     .header .header__logo-link {
@@ -223,6 +254,9 @@ body {
           float: none;
           margin: 0 auto 15px;
           display: block; } }
+      @media screen and (max-width: 465px) {
+        .header .header__logo-link {
+          width: 120px; } }
       .header .header__logo-link img {
         max-width: 308px; }
         @media screen and (max-width: 900px) {
@@ -231,9 +265,15 @@ body {
         @media screen and (max-width: 810px) {
           .header .header__logo-link img {
             width: 200px; } }
+        @media screen and (max-width: 465px) {
+          .header .header__logo-link img {
+            width: 120px; } }
   .header__contakts {
     float: right;
     padding-top: 18px; }
+    @media screen and (max-width: 465px) {
+      .header__contakts {
+        text-align: center; } }
     @media screen and (max-width: 900px) {
       .header__contakts {
         font-size: 12px; } }
@@ -250,6 +290,10 @@ body {
       padding-left: 25px;
       border: 1px solid #ccc;
       padding-top: 5px; }
+      @media screen and (max-width: 465px) {
+        .header__contakts-tel, .header__contakts-comp {
+          border: none;
+          text-align: left; } }
       .header__contakts-tel a, .header__contakts-comp a {
         margin: 0;
         margin-bottom: 7px;
@@ -264,6 +308,11 @@ body {
       @media screen and (max-width: 810px) {
         .header__contakts-tel {
           min-width: 105px; } }
+      @media screen and (max-width: 465px) {
+        .header__contakts-tel {
+          background: none;
+          float: none;
+          display: inline-block; } }
       .header__contakts-tel_tel:before {
         width: 10px;
         height: 16px;
@@ -301,6 +350,18 @@ body {
       @media screen and (max-width: 810px) {
         .header__contakts-comp {
           min-width: 135px; } }
+      @media screen and (max-width: 465px) {
+        .header__contakts-comp {
+          background: none;
+          float: none;
+          margin-left: 0;
+          display: inline-block;
+          min-width: 115px;
+          margin: 0 auto; } }
+      @media screen and (max-width: 389px) {
+        .header__contakts-comp {
+          position: relative;
+          left: 5px; } }
       .header__contakts-comp_skype:before {
         width: 14px;
         height: 15px;
@@ -338,10 +399,18 @@ body {
         margin: 0 auto;
         width: 445px;
         margin-bottom: 10px; } }
+    @media screen and (max-width: 490px) {
+      .header__menu {
+        text-align: center;
+        width: 330px; } }
     .header__menu-list {
       list-style-type: none;
       padding: 0;
       margin: 0; }
+      @media screen and (max-width: 490px) {
+        .header__menu-list {
+          display: inline-block;
+          min-width: 327px; } }
     .header__menu-item {
       float: left;
       margin-left: 18px;
@@ -358,6 +427,10 @@ body {
       @media screen and (max-width: 1060px) {
         .header__menu-item {
           font-size: 16px; } }
+      @media screen and (max-width: 490px) {
+        .header__menu-item {
+          font-size: 12px;
+          margin-left: 12px; } }
     .header__menu-link {
       color: #4b4b4b;
       transition: 0.3s; }
@@ -373,10 +446,17 @@ body {
         float: none;
         margin: 0 auto;
         width: 100px; } }
+    @media screen and (max-width: 490px) {
+      .header__info {
+        text-align: center;
+        min-width: 180px; } }
     .header__info-fake {
       border: 1px solid #73c040;
       position: relative;
       min-width: 245px; }
+      @media screen and (max-width: 490px) {
+        .header__info-fake {
+          min-width: 177px; } }
     .header__info-input {
       padding: 13px 5px 12px;
       border: 0;
@@ -385,6 +465,10 @@ body {
       @media screen and (max-width: 930px) {
         .header__info-input {
           padding: 9px 5px 10px; } }
+      @media screen and (max-width: 490px) {
+        .header__info-input {
+          padding: 2px 5px;
+          min-width: 166px; } }
       .header__info-input:focus {
         outline: 0; }
     .header__info-submit, .header__info .fake-submit {
@@ -396,16 +480,31 @@ body {
       @media screen and (max-width: 930px) {
         .header__info-submit, .header__info .fake-submit {
           height: 36px; } }
+      @media screen and (max-width: 490px) {
+        .header__info-submit, .header__info .fake-submit {
+          height: 21px;
+          width: 26px; } }
     .header__info-submit {
       z-index: 2;
       opacity: 0; }
     .header__info-form {
       float: left; }
+      @media screen and (max-width: 490px) {
+        .header__info-form {
+          float: none;
+          width: 170px;
+          margin-bottom: 5px; } }
     .header__info .fake-submit {
       cursor: pointer;
       z-index: 1;
       background: #8dd95a url(../img/spritesheet.png) -1px 84px;
       background: url(../img/spritesheet.png) -1px 84px, linear-gradient(to bottom, #8dd95a, #75c242); }
+      @media screen and (max-width: 490px) {
+        .header__info .fake-submit {
+          background-position: -7px 74px; } }
+  @media screen and (max-width: 490px) {
+    .header__search {
+      display: inline-block; } }
   .header__price {
     background: #8dd95a url(../img/spritesheet.png) 0px 51px;
     float: left;
@@ -424,6 +523,13 @@ body {
         padding-bottom: 10px;
         padding-left: 35px;
         background-position: -4px 50px; } }
+    @media screen and (max-width: 490px) {
+      .header__price {
+        margin-left: 0;
+        width: 140px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        background-position: 0px 47px; } }
   .header .header__buy {
     background: #fff;
     border-top: 5px solid #73c040;
@@ -1136,16 +1242,16 @@ body {
     display: block; }
     @media screen and (max-width: 965px) {
       .footer-fix {
-        padding-bottom: 405px; } }
-    @media screen and (max-width: 580px) {
+        padding-bottom: 514px; } }
+    @media screen and (max-width: 581px) {
       .footer-fix {
-        padding-bottom: 600px; } }
-    @media screen and (max-width: 580px) {
+        padding-bottom: 514px; } }
+    @media screen and (max-width: 575px) {
       .footer-fix {
-        padding-bottom: 630px; } }
-    @media screen and (max-width: 515px) {
+        padding-bottom: 558px; } }
+    @media screen and (max-width: 534px) {
       .footer-fix {
-        padding-bottom: 635px; } }
+        padding-bottom: 754px; } }
   .footer__text {
     margin-bottom: 50px; }
     .footer__text-title {
@@ -1159,6 +1265,12 @@ body {
       margin-left: 0; }
     .footer__info_member {
       width: 250px; }
+    @media screen and (max-width: 670px) {
+      .footer__info_information {
+        margin-right: 45px; } }
+    @media screen and (max-width: 670px) {
+      .footer__info_contakts {
+        margin-left: 0; } }
   .footer__list {
     list-style-type: none;
     padding: 0;
@@ -1254,3 +1366,7 @@ body {
       .tripple-line_brands {
         width: 200px;
         margin-left: -100px; } }
+    @media screen and (max-width: 480px) {
+      .tripple-line_brands {
+        width: 100px;
+        margin-left: -50px; } }

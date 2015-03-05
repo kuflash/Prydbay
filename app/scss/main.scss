@@ -47,11 +47,20 @@ body {
 			width: 310px;
 			margin: 0 auto;
 		}
+		@media screen and (max-width: 465px) {
+			float: none;
+			width: 215px;
+			margin: 0 auto;
+			font-size: 11px;
+		}
 		&-item {
 			float: left;
 			margin-left: 53px;
 			&:first-child {
 				margin-left: 0;
+			}
+			@media screen and (max-width: 465px) {
+				margin: 2px;
 			}
 		}
 		&-link {
@@ -67,6 +76,9 @@ body {
 			@media screen and (max-width: 900px) {
 				padding: 10px 5px 10px;
 			}
+			@media screen and (max-width: 465px) {
+				padding: 7px 5px 7px;
+			}
 			&:before {
 				display: block;
 			    content: "";
@@ -74,6 +86,9 @@ body {
 			    left: -28px;
 				background-image: url(../img/spritesheet.png);
 			    background-repeat: no-repeat;
+			    @media screen and (max-width: 465px) {
+					background: none;
+				}
 			}
 			&_profile:hover:before {
 				background-position: -109px -47px;
@@ -130,6 +145,10 @@ body {
 			width: 430px;
 			margin: 0 auto;
 		}
+
+		@media screen and (max-width: 465px) {
+			width: 348px;
+		}
 		&-item {
 			float: left;
 			margin-left: 45px;
@@ -141,6 +160,10 @@ body {
 			}
 			&_enter {
 				margin-left: 20px;
+			}
+			@media screen and (max-width: 465px) {
+				margin-left: 5px;
+				font-size: 11px;
 			}
 		}
 		&-link {
@@ -156,6 +179,10 @@ body {
 			@media screen and (max-width: 900px) {
 				padding: 10px 5px 10px;
 			}
+
+			@media screen and (max-width: 465px) {
+				padding: 7px 5px 7px;
+			}
 			&_line {
 				margin-left: 2px;
 				margin-right: 1px;
@@ -165,6 +192,10 @@ body {
 				position: relative;
 				width: 80px;
 				text-align: right;
+
+				@media screen and (max-width: 465px) {
+					text-align: left;
+				}
 				&:before{
 					width: 16px;
 				    height: 11px;
@@ -178,6 +209,10 @@ body {
 				    top: 18px;
 				    @media screen and (max-width: 900px) {
 						top: 11px;
+					}
+
+					@media screen and (max-width: 465px) {
+						background: none;
 					}
 				}
 			}
@@ -202,6 +237,9 @@ body {
 					margin: 0 auto 15px;
 					display: block;	
 			}
+			@media screen and (max-width: 465px) {
+					width: 120px;
+			}
 			& img {
 				max-width: 308px;
 
@@ -211,12 +249,19 @@ body {
 				@media screen and (max-width: 810px) {
 					width: 200px;
 				}
+
+				@media screen and (max-width: 465px) {
+					width: 120px;
+				}
 			}
 		}
 	}
 	&__contakts {
 		float: right;
 		padding-top: 18px;
+		@media screen and (max-width: 465px) {
+			text-align: center;
+		}
 		&:after {
 			@extend .clear;
 		}
@@ -236,6 +281,10 @@ body {
 			padding-left: 25px;
 			border: 1px solid #ccc;
 			padding-top: 5px;
+			@media screen and (max-width: 465px) {
+				border: none;
+				text-align: left;
+			}
 			a {
 				margin: 0;
 				margin-bottom: 7px;
@@ -251,6 +300,11 @@ body {
 			background: linear-gradient(to bottom, #fefffe, #f4f7ef);
 			@media screen and (max-width: 810px) {
 				min-width: 105px;
+			}
+			@media screen and (max-width: 465px) {
+				background: none;
+				float: none;
+				display: inline-block;
 			}
 			&_tel:before {
 				width: 10px;
@@ -281,6 +335,7 @@ body {
 			    @media screen and (max-width: 900px) {
 					top: 1px;
 				}
+
 			}
 		}
 		&-comp {
@@ -291,6 +346,18 @@ body {
 			background: linear-gradient(to bottom, #fefffe, #f4f7ef);
 			@media screen and (max-width: 810px) {
 				min-width: 135px;
+			}
+			@media screen and (max-width: 465px) {
+				background: none;
+				float: none;
+				margin-left: 0;
+				display: inline-block;
+				min-width: 115px;
+				margin: 0 auto;
+			}
+			@media screen and (max-width: 389px) {
+				position: relative;
+				left: 5px;
 			}
 			&_skype:before {
 				width: 14px;
@@ -337,10 +404,18 @@ body {
 			width: 445px;
 			margin-bottom: 10px;
 		}
+		@media screen and (max-width: 490px) {
+			text-align: center;
+			width: 330px;
+		}
 		&-list {
 			@include list;
 			&:after {
 				@extend .clear;
+			}
+			@media screen and (max-width: 490px) {
+				display: inline-block;
+				min-width: 327px;
 			}
 		}
 		&-item {
@@ -360,6 +435,10 @@ body {
 			}
 			@media screen and (max-width: 1060px) {
 				font-size: 16px;
+			}
+			@media screen and (max-width: 490px) {
+				font-size: 12px;
+				margin-left: 12px;
 			}
 		}
 		&-link {
@@ -383,6 +462,10 @@ body {
 			margin: 0 auto;
 			width: 100px;
 		}
+		@media screen and (max-width: 490px) {
+			text-align: center;
+			min-width: 180px;
+		}
 		&:after {
 			@extend .clear;
 		}
@@ -391,6 +474,9 @@ body {
 			border: 1px solid #73c040;
 			position: relative;
 			min-width: 245px;
+			@media screen and (max-width: 490px) {
+				min-width: 177px;
+			}
 		}
 		&-input {
 			padding: 13px 5px 12px;
@@ -399,6 +485,10 @@ body {
 			min-width: 194px;
 			@media screen and (max-width: 930px) {
 				padding: 9px 5px 10px;
+			}
+			@media screen and (max-width: 490px) {
+				padding: 2px 5px;
+				min-width: 166px;
 			}
 			&:focus {
 				outline: 0;
@@ -413,6 +503,10 @@ body {
 			@media screen and (max-width: 930px) {
 				height: 36px;
 			}	
+			@media screen and (max-width: 490px) {
+				height: 21px;
+				width: 26px;
+			}	
 		}
 
 		&-submit {
@@ -421,13 +515,26 @@ body {
 		}
 		&-form {
 			float: left;
+			@media screen and (max-width: 490px) {
+				float: none;
+				width: 170px;
+				margin-bottom: 5px;
+			}
 		}
 		.fake-submit {
 			cursor: pointer;
 			z-index: 1;
 			background: #8dd95a url(../img/spritesheet.png) -1px 84px;
 			background: url(../img/spritesheet.png) -1px 84px, linear-gradient(to bottom, #8dd95a, #75c242);
+			@media screen and (max-width: 490px) {
+				background-position: -7px 74px;
+			}	
 		}
+	}
+	&__search {
+		@media screen and (max-width: 490px) {
+				display: inline-block;
+			}
 	}
 	&__price {
 		background: #8dd95a url(../img/spritesheet.png) 0px 51px;
@@ -447,7 +554,14 @@ body {
 				padding-bottom: 10px;
 				padding-left: 35px;
 				background-position: -4px 50px;
-			}	
+		}
+		@media screen and (max-width: 490px) {
+			margin-left: 0;
+			width: 140px;
+			padding-top: 8px;
+			padding-bottom: 8px;
+			background-position: 0px 47px;
+		}	
 	}
 
 	/* appear block with phone*/
@@ -1240,17 +1354,16 @@ body {
 		content: "";
 		display: block;
 		@media screen and (max-width: 965px){
-			padding-bottom: 405px;
+			padding-bottom: 514px;
 		}
-		@media screen and (max-width: 580px){
-			padding-bottom: 600px;
+		@media screen and (max-width: 581px){
+			padding-bottom: 514px;
 		}
-		@media screen and (max-width: 580px){
-			padding-bottom: 630px;
+		@media screen and (max-width: 575px){
+			padding-bottom: 558px;
 		}
-
-		@media screen and (max-width: 515px){
-			padding-bottom: 635px;
+		@media screen and (max-width: 534px){
+			padding-bottom: 754px;
 		}
 	}
 	&__text {
@@ -1272,6 +1385,16 @@ body {
 		}
 		&_member {
 			width: 250px;
+		}
+		&_information {
+			@media screen and (max-width: 670px){
+				margin-right: 45px;
+			}
+		}
+		&_contakts {
+			@media screen and (max-width: 670px){
+				margin-left: 0;
+			}
 		}
 	}
 	&__list {
@@ -1393,6 +1516,10 @@ body {
 			@media screen and (max-width: 985px) {
 				width: 200px;
 				margin-left: -100px;
+			}
+			@media screen and (max-width: 480px) {
+				width: 100px;
+				margin-left: -50px;
 			}
 		}
 	}
